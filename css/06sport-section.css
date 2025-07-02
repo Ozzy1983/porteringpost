@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.match{
+    width: 70%;
+}
+
+.match img{
+    width: 100%;
+    height: auto;
+}
+
+/*--- BOXGRID ARTICLES ---*/
+
+.boxGrid{
+    display: grid;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: fit-content;
+    height: auto;
+    background-color: #f7f7f7;
+    border: 1px solid #e6e8e3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.news .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    height: auto;
+    padding: 10px;
+}
+
+.news .text h4, h5{
+    text-align: center;
+}
+
+.news .text .centrado{
+    text-align: center;
+}
+
+#target1 img{
+    width: 300px;
+    height: 250px;
+}
+
+#target0 img{
+    width: 100%; 
+    height: 70%;
+}
+
+#target2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+@media screen and (max-width: 1024px){
+
+    .match{
+        width: 100%;
+    }
+
+    #target0 img{ 
+        height: 70%;
+    }
+
+    .boxGrid{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+}

@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* TITLE*/
+.tit-box{
+    margin: 10px;
+    width: 70%;
+    text-transform: uppercase;
+
+}
+
+.tit-box span{
+    color: #a53425;
+    margin-right: 10px;
+}
+
+/*COME SI DICE?*/
+
+.how-to-say{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    color: black; 
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5; 
+    z-index: 0;
+}
+
+.how-to-say .eng::before {
+    background-image: url('unionjack.jpg');
+}
+
+.how-to-say .ita::before {
+    background-image: url('italyflag.jpg');
+}
+
+.ontop {
+    position: relative;
+    z-index: 1;
+    padding: 0 10px;
+}
+
+/*change nhs*/
+.change-nhs{
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #e6e8e3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);   
+}
+
+.change-nhs .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*--- BOXGRID ARTICLES ---*/
+
+.boxGrid{
+    display: grid;
+    width: 70%;
+    padding: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #e6e8e3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+#target2{
+    text-align: center;
+}
+
+.picture img{
+    width: 300px;
+    height: 150px;
+}
+
+.news .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.Sportsman{
+    font-weight: bold;
+}
+
+/*-writer articles-*/
+.news .text h5{
+    color: gray;
+}
+
+
+.bullet{
+    color: #a53425;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+/*EFECT SHOW MORE TEXT*/
+.more-text{
+    display: none;
+}
+
+.read-more{
+    color: #254aa5;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.text-news span{
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 1024px){
+    
+    .tit-box{
+        width: 90%;
+    }
+
+    .how-to-say{
+        width: 100%;
+        background-color: #f7f7f7;
+        border: 1px solid #e6e8e3;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    }
+
+    .box {
+        width: 140px;
+        height: 80px;
+    }
+
+    .boxGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        width: 90%;
+        padding: 0;
+    }
+
+    .news .text p{
+        font-size: 14px;
+    }
+    
+    .news{
+        min-height: 110px;
+        height: auto;
+    }
+
+    .news .text{
+        padding: 10px;
+        width: 90%;
+    }
+    
+    .news img{
+        width: 100%;
+        height: 80%;
+        
+    }
+
+    .bullet{
+        font-size: 10px;
+    }
+
+    .change-nhs{
+        width: 90%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .change-nhs img{
+        width: 90%;
+        height: 170px;
+        padding: 10px;
+    }
+
+    .change-nhs .text{
+        text-align: center;
+        padding: 10px;
+    }
+}

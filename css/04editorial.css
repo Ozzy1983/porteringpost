@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.tit-box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+    text-transform: uppercase;
+}
+
+.tit-box span{
+    color: #a53425;
+    margin-right: 10px;
+}
+
+/*-- CT PROPOSED --*/
+.ct-level2-proposed{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    gap: 20px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #e6e8e3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.ct-box{
+    width: 50%;
+    background-color: aliceblue;
+    padding: 10px;
+    border: 1px solid #e6e8e3;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.ct-box img{
+    width: 100%;
+}
+
+.ct-box h5{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bullet-box{
+    width: 70%;
+    
+}
+
+.bullet{
+    margin-right: 5px;
+    font-size: 12px;
+    color: #a53425;
+}
+
+@media screen and (max-width: 1024px){
+    .tit-box{
+        width: 90%;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    .ct-level2-proposed{
+        width: 90%;
+    }
+
+    .ct-box{
+        width: 90%;
+    }
+
+    .bullet-box{
+        width: 100%;
+        
+    }
+}
