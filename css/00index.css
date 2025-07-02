@@ -295,9 +295,7 @@
         display: none;
     }
 
-    .text-clive a{
-        font-size: 15px;
-    }
+   
 
     .box-container{
         grid-template-columns: 1fr;
@@ -312,22 +310,7 @@
         padding: 0;
     }
 
-    #news3{
-        grid-column-start: 1;
-        grid-column-end: 3;
     
-        grid-row-start: 3;
-        grid-row-end: 4;
-    }
-
-    #news4{
-        grid-column-start: 1;
-        grid-column-end: 3;
-    
-        grid-row-start: 4;
-        grid-row-end: 5;
-       
-    }
 
     .news{
         grid-template-columns: 1fr;
@@ -381,15 +364,7 @@
         height: auto;
     }
 
-    #Clive-memoriam{
-        width: 90%;
-    }
-
-    #Clive-memoriam .clivepng{
-        width: 100%;
-        height: 50%;
-        
-    }
+    
 
    
 }
