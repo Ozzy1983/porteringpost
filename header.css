@@ -182,6 +182,7 @@ footer{
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    background-color: aqua;
 }
 
 footer p{
