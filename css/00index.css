@@ -364,6 +364,10 @@
         height: auto;
     }
 
+    .page{
+        border: 1ps solid black;
+        border-radius: 10px;
+    }
     
 
    
