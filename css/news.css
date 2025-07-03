@@ -1,0 +1,85 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+/*--- BOXGRID ARTICLES ---*/
+
+.boxGrid{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.news{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: fit-content;
+    height: auto;
+    background-color: #f7f7f7;
+    border: 1px solid #e6e8e3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2%; 
+}
+
+
+
+.news .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    
+}
+
+.news .text h5{
+    color: gray;
+}
+
+.news img{
+    width: 100%;
+    height: auto;
+}
+
+.bullet{
+    color: #a53425;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+/*EFECT SHOW MORE TEXT*/
+.more-text{
+    display: none;
+}
+
+.read-more{
+    color: #254aa5;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.text-news span{
+    font-weight: bold;
+}
+
+/*ADVERTAISING*/
+
+#ad{
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    height: 120px;
+}
+
+@media screen and (max-width: 1024px){
+
+}
