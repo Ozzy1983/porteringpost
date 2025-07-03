@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    padding-bottom: 60px;
+}
+
 :root {
     font-size: 18px; /* Aumentamos la base para pantallas grandes (1rem = 18px) */
 }
@@ -44,6 +49,7 @@ header{
     padding: 5px;
     height: auto;
     width: 70%;
+    
 }
 
 .date{
@@ -126,8 +132,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
 }
 
 .logo img{
@@ -177,29 +181,39 @@ header{
 
 /*--- footer ---*/
 footer{
-    display: flex;
-    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-top: 50px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1%;
+    z-index: 10001;
+    
+}
+
+.menu-icono{   
+    display: grid;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    text-align: center;
+    grid-template-columns: repeat(5, 1fr);
+   
+    
 }
 
-footer p{
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    height: 40px;
-    width: 95%;
+.menu-icono img{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: #ffffa3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-footer a{
-    text-decoration: none;
-    cursor: pointer;
-    margin-left: 5px;
-
+.menu-icono img:hover{
+    background-color: #e0180a;
+    transform: scale(1.2);
 }
-
-
 
 @media screen and (max-width: 1024px){
     :root {
