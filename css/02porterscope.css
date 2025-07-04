@@ -9,248 +9,52 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 10%;
 }
-
-.box-container{
-    display: grid;
-    width: 70%;
-    grid-template-columns: 3fr 1fr; /*text 3f advs 1f*/
-    justify-content: center;
-    gap: 10px;
-}
-
-.tit-box{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-    text-transform: uppercase;
-}
-
-.tit-box span{
-    color: #a53425;
-    margin-right: 10px;
-}
-
-/*---PORTERSCOPE ---*/
 
 .porterscope{
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px; 
-    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
-.box{
+.zodiac{
     display: flex;
-    gap: 10px;
-    background-color: #f7f7f7;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
     border: 1px solid #e6e8e3;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2%;
+
 }
 
-.porterscope .text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.zodiac:hover{
+    transform: scale(1.5);
+
 }
 
-.porterscope .text span{
-    font-weight: bold;
-}
-
-.box img{
-    width: 150px;
-    height: 150px;
-    border-radius: 10%;
-    padding: 10px;
-   
-}
-
-/*--- BOXGRID ARTICLES ---*/
-
-.boxGrid{
-    display: grid;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 10px;
-}
-
-.news{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    min-height: fit-content;
-    height: auto;
-    background-color: #f7f7f7;
-    border: 1px solid #e6e8e3;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-}
-
-.news .text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    height: auto;
-    min-height: 90%;
-}
-
-
-
-/*--*/
-.news .text h5{
-    color: gray;
-}
-
-.news img{
-    width: 100px;
-    height: 80px;
-    padding: 10px;
-}
-
-.bullet{
-    color: #a53425;
-    margin-right: 10px;
-    font-size: 1rem;
-}
-
-/*EFECT SHOW MORE TEXT*/
-.more-text{
-    display: none;
-}
-
-.read-more{
-    color: #254aa5;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.text-news span{
-    font-weight: bold;
-}
-
-/*Josh Gardner filosofo*/
-.joshGardner{
-    width: 100%;
-    height: 600px;
-    margin-top: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #4A5A6A;
-    border: 1px solid #e6e8e3;
-    border-radius: 5%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    color: #EAECEF; 
-}
-
-.joshGardner img{
-    width: 90%;
-    height: auto;
-    border-radius: 10%;
-    padding: 10px;
-    
-    
-}
-
-.text-gardner{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    gap: 10px;
-}
-
-.text-gardner h4{
-    text-transform: uppercase;
-    font-family:  'Josefin Sans', sans-serif;
-    font-weight: 400;
-    font-size: 21px;
-    letter-spacing: 2px;
-}
-
-.text-gardner .uno{
-    font-size: 17px;
-}
-
-.text-gardner .dos{
-    font-size: 21px;
+.zodiac img{
+    width: 40%;
+    height: 50%;
 }
 
 
 @media screen and (max-width: 1024px){
 
-    .box-container{
-        width: 90%;
-        grid-template-columns: 1fr;
-       
+    
+
+    .zodiac h3{
+        font-size: 12px;
     }
 
-    .tit-box{
-        width: 100%;
-        
-    }
-
-    .porterscope{
-        width: 100%;
-    }
-
-    .box{
-        padding: 5px;
-    }
-
-    .box img{
-        width: 70px;
-        height: 100px;
-    }
-
-    .boxGrid{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, auto);
-        width: 100%;
-        padding: 0;
-    }
-
-    .box .text p{
-        font-size: 14px;
+    .zodiac p{
+        font-size: 9px;
     }
     
-    .news{
-        min-height: 110px;
-        height: auto;
-    }
-    
-    .news img{
-        width: 70px;
-        height: 80px;
-        
-    }
-
-    .joshGardner{
-        margin-top: 0;
-        width: 100%;
-        grid-template-columns: 1fr;
-    }
-
-    .joshGardner img{
-        width: 90%;
-    }
-
-    .bullet{
-        font-size: 10px;
-    }
 
 }
 
