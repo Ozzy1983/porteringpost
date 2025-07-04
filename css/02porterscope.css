@@ -32,6 +32,14 @@
 
 }
 
+.zodiac p{
+    display: none;
+}
+
+.zodiac p:hover{
+    display: block;
+}
+
 .zodiac:hover{
     transform: scale(1.5);
 
