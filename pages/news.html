@@ -37,161 +37,152 @@
         </header>
 
         <div class="main-container">
-            <div class="boxGrid">
-                <div class="news">
-                    <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
+
+            <div class="box-container">
+
+                <h2 class="tit-box"><span>❖</span>news</h2>
+            
+                <div class="boxGrid">
+
+                    <div class="news blue entrada salida" onclick="toggleNews(this)">
+                        <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
                         <div class="text">
                             <h4>Title article</h4>
-                            <p>
+                            <h5 class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                            <p class="news-text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <span class="more-text">
-                                    Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
-                                    autem doloremque doloribus a voluptates! Beatae perferendis at maiores perspiciatis praesentium architecto ad, molestias asperiores?
-                                    
-                                </span>
-                                <span class="read-more" onclick="toggleText(this)">Read more...</span>
+                                Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
+                                autem doloremque doloribus a voluptates! Beatae perferendis 
+                                at maiores perspiciatis praesentium architecto ad, molestias asperiores?                              
                             </p>
                             <h5><span class="bullet">❖</span>Bylines</h5>
                         </div>              
-                </div>
-
-                <div class="news">                  
-                    <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
-                    <div class="text">
-                        <h4>Title article</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <span class="more-text">
-                                    Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
-                                    autem doloremque doloribus a voluptates! Beatae perferendis at maiores perspiciatis praesentium architecto ad, molestias asperiores?
-                                    
-                                </span>
-                                <span class="read-more" onclick="toggleText(this)">Read more...</span>
-                            </p>
-                        <h5><span class="bullet">❖</span>Bylines</h5>
-                    </div>   
-                </div>
-
-                <div class="news">  
-                    <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
-                    <div class="text">
-                        <h4>Title article</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="more-text">
-                            Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
-                            autem doloremque doloribus a voluptates! Beatae perferendis
-                            at maiores perspiciatis praesentium architecto ad, molestias asperiores?   
-                            </span>
-                            <span class="read-more" onclick="toggleText(this)">Read more...</span>
-                        </p>
-                        <h5><span class="bullet">❖</span>Bylines</h5>
-                    </div>   
-                </div>
-
-                <div class="news">
-                    <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
-                    <div class="text">
-                        <h4>Title article</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="more-text">
-                            Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
-                            autem doloremque doloribus a voluptates! Beatae perferendis 
-                            at maiores perspiciatis praesentium architecto ad, molestias asperiores?        
-                            </span>
-                            <span class="read-more" onclick="toggleText(this)">Read more...</span>
-                        </p>
-                        <h5><span class="bullet">❖</span>Bylines</h5>
-                                       
                     </div>
-                </div>
 
-                <div class="news" id="ad">
-                    <h4>Advertising</h4>
-                    <div class="picture"><img src="../assets/img/default.webp" alt=""></div>
-                    <div class="text">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
-                            autem doloremque doloribus a voluptates! Beatae perferendis 
-                            at maiores perspiciatis praesentium architecto ad, molestias asperiores?        
-                            
-                        </p>
-                  
-                    </div>
-                </div>
-
-                <div class="news">
-                    <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
+                    <div class="news red entrada salida" onclick="toggleNews(this)">
+                        <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
                         <div class="text">
                             <h4>Title article</h4>
-                            <p>
+                            <h5 class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                            <p class="news-text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <span class="more-text">
-                                    Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
-                                    autem doloremque doloribus a voluptates! Beatae perferendis at maiores perspiciatis praesentium architecto ad, molestias asperiores?
-                                    
-                                </span>
-                                <span class="read-more" onclick="toggleText(this)">Read more...</span>
+                                Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
+                                autem doloremque doloribus a voluptates! Beatae perferendis 
+                                at maiores perspiciatis praesentium architecto ad, molestias asperiores?                              
                             </p>
                             <h5><span class="bullet">❖</span>Bylines</h5>
                         </div>              
-                </div>
+                    </div>
 
-                <div class="news">                  
-                    <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
-                    <div class="text">
-                        <h4>Title article</h4>
-                            <p>
+                    <div class="news yellow entrada salida" onclick="toggleNews(this)">
+                        <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
+                        <div class="text">
+                            <h4>Title article</h4>
+                            <h5 class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                            <p class="news-text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <span class="more-text">
-                                    Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
-                                    autem doloremque doloribus a voluptates! Beatae perferendis at maiores perspiciatis praesentium architecto ad, molestias asperiores?
-                                    
-                                </span>
-                                <span class="read-more" onclick="toggleText(this)">Read more...</span>
+                                Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
+                                autem doloremque doloribus a voluptates! Beatae perferendis 
+                                at maiores perspiciatis praesentium architecto ad, molestias asperiores?                              
                             </p>
-                        <h5><span class="bullet">❖</span>Bylines</h5>
-                    </div>   
-                </div>
+                            <h5><span class="bullet">❖</span>Bylines</h5>
+                        </div>              
+                    </div>
 
-                <div class="news">  
-                    <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
-                    <div class="text">
-                        <h4>Title article</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="more-text">
-                            Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
-                            autem doloremque doloribus a voluptates! Beatae perferendis
-                            at maiores perspiciatis praesentium architecto ad, molestias asperiores?   
-                            </span>
-                            <span class="read-more" onclick="toggleText(this)">Read more...</span>
-                        </p>
-                        <h5><span class="bullet">❖</span>Bylines</h5>
-                    </div>   
-                </div>
+                    <div class="news green entrada salida" onclick="toggleNews(this)">
+                        <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
+                        <div class="text">
+                            <h4>Title article</h4>
+                            <h5 class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                            <p class="news-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
+                                autem doloremque doloribus a voluptates! Beatae perferendis 
+                                at maiores perspiciatis praesentium architecto ad, molestias asperiores?                              
+                            </p>
+                            <h5><span class="bullet">❖</span>Bylines</h5>
+                        </div>              
+                    </div>
 
-                <div class="news">
-                    <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
-                    <div class="text">
-                        <h4>Title article</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="more-text">
-                            Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
-                            autem doloremque doloribus a voluptates! Beatae perferendis 
-                            at maiores perspiciatis praesentium architecto ad, molestias asperiores?        
-                            </span>
-                            <span class="read-more" onclick="toggleText(this)">Read more...</span>
-                        </p>
-                        <h5><span class="bullet">❖</span>Bylines</h5>
-                                       
+                    <!--ADVERTISING-->
+                    <div class="news" id="ad">
+                        <h4>The Canteen</h4>
+                        <div class="picture"><img src="../assets/img/Ads/photo-breakfast.png" alt=""></div>
+                        <div class="text">
+                            <p>
+                                Try our English breakfast! It’s so good, 
+                                even the doctors prescribe it... with caution!" 🍳😂       
+                            </p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="news blue entrada salida" onclick="toggleNews(this)">
+                        <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
+                        <div class="text">
+                            <h4>Title article</h4>
+                            <h5 class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                            <p class="news-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
+                                autem doloremque doloribus a voluptates! Beatae perferendis 
+                                at maiores perspiciatis praesentium architecto ad, molestias asperiores?                              
+                            </p>
+                            <h5><span class="bullet">❖</span>Bylines</h5>
+                        </div>              
+                    </div>
+
+                    <div class="news red entrada salida" onclick="toggleNews(this)">
+                        <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
+                        <div class="text">
+                            <h4>Title article</h4>
+                            <h5 class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                            <p class="news-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
+                                autem doloremque doloribus a voluptates! Beatae perferendis 
+                                at maiores perspiciatis praesentium architecto ad, molestias asperiores?                              
+                            </p>
+                            <h5><span class="bullet">❖</span>Bylines</h5>
+                        </div>              
+                    </div>
+
+                    <div class="news yellow entrada salida" onclick="toggleNews(this)">
+                        <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
+                        <div class="text">
+                            <h4>Title article</h4>
+                            <h5 class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                            <p class="news-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
+                                autem doloremque doloribus a voluptates! Beatae perferendis 
+                                at maiores perspiciatis praesentium architecto ad, molestias asperiores?                              
+                            </p>
+                            <h5><span class="bullet">❖</span>Bylines</h5>
+                        </div>              
+                    </div>
+
+                    <div class="news green entrada salida" onclick="toggleNews(this)">
+                        <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
+                        <div class="text">
+                            <h4>Title article</h4>
+                            <h5 class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                            <p class="news-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
+                                autem doloremque doloribus a voluptates! Beatae perferendis 
+                                at maiores perspiciatis praesentium architecto ad, molestias asperiores?                              
+                            </p>
+                            <h5><span class="bullet">❖</span>Bylines</h5>
+                        </div>              
                     </div>
                 </div>
 
-            </div>     
+                </div> 
+
+            </div>
+
+    
         </div>
 
         <footer>
@@ -207,59 +198,40 @@
         <script src="js/index.js"></script>
 
         <script>
-            // to show menu or hide
-            function toggleMenu() {
-                const menu = document.querySelector(".menu");
-                menu.classList.toggle("active");
-            }
-            //close menu when on click to link
-            document.querySelectorAll(".menuList a").forEach(link => {
-                link.addEventListener("click", () => {
-                    document.querySelector(".menu").classList.remove("active");
-                });
+            const entradas = document.querySelectorAll('.entrada');
+
+            entradas.forEach((el, i) => {
+                el.classList.add(i % 2 === 0 ? 'izquierda' : 'derecha');
+                el.style.transitionDelay = `${i * 0.2}s`; // delay escalonado
             });
 
-            //to close cliking anywhere
-            document.addEventListener("click", function (event) {
-                const menu = document.querySelector(".menu");
-                 const burger = document.querySelector(".burger");
-
-                // Si el menú está activo y el clic fue fuera del menú y fuera del icono de hamburguesa
-                if (menu.classList.contains("active") &&
-                    !menu.contains(event.target) &&
-                    !burger.contains(event.target)) {
-                    menu.classList.remove("active");
-                }
-            });
-
-            //to dropdown the text
-            function toggleText(element) {
-                var moreText = element.previousElementSibling; 
-                if (moreText.style.display === "none" || moreText.style.display === "") {
-                    moreText.style.display = "inline";
-                    element.textContent = "Read less...";
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
                 } else {
-                    moreText.style.display = "none";
-                    element.textContent = "Read more...";
+                    entry.target.classList.remove('visible');
+                }
+                });
+            }, {
+                threshold: 0.4
+            });
+
+            entradas.forEach(el => observer.observe(el));
+
+            /*text */
+            function toggleNews(element) {
+                const texto = element.querySelector(".news-text");
+                if (texto.style.display === "block") {
+                texto.style.display = "none";
+                } else {
+                texto.style.display = "block";
                 }
             }
-
-            //dropdown issues
-            const toggleButton = document.getElementById("toggle-menu");
-            const dropdownMenu = document.getElementById("dropdown-menu");
-
-            toggleButton.addEventListener("click", function(e) {
-                e.preventDefault();
-                dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
-            });
-
-            // Cerrar menú si se hace clic fuera
-            document.addEventListener("click", function(e) {
-                if (!dropdownMenu.contains(e.target) && !toggleButton.contains(e.target)) {
-                    dropdownMenu.style.display = "none";
-                }
-            });
         </script>
+
+
+       
 
     </body>
 
