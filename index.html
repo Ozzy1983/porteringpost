@@ -44,9 +44,9 @@
                     <div>
                         <p class="live-color">LIVE</p>
                     </div>
-                    <div> 
-                        <p class="live-normal"><a href="https://www.scientificamerican.com/article/science-tells-us-the-u-s-is-heading-toward-a-dictatorship/" target="_blank"> Science Tells Us the U.S. Is Heading toward a Dictatorship <span>2h ago</span></a></p>
-                    </div>
+
+                    <div id="noticias"></div>
+                    
                 </div>
 
                 <div class="frontpage">
@@ -54,12 +54,32 @@
                     <div class="picture"><img src="assets/img/default.webp" alt="Photo frontpage" id="frontpage"></div>
                     <div class="text">
                         <h4>Title</h4>
-                        <p>
+                        <p class="hidden">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
                             autem doloremque doloribus a voluptates! Beatae perferendis 
                             at maiores perspiciatis praesentium architecto ad, molestias asperiores?
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        </p>
+                        <P class="hidden">
+                            Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
+                            autem doloremque doloribus a voluptates! Beatae perferendis 
+                            at maiores perspiciatis praesentium architecto ad, molestias asperiores?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
+                            autem doloremque doloribus a voluptates! Beatae perferendis 
+                            at maiores perspiciatis praesentium architecto ad, molestias asperiores?
+                        </P>
+                        <p class="hidden">
+                            Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
+                            autem doloremque doloribus a voluptates! Beatae perferendis 
+                            at maiores perspiciatis praesentium architecto ad, molestias asperiores?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
+                            autem doloremque doloribus a voluptates! Beatae perferendis 
+                            at maiores perspiciatis praesentium architecto ad, molestias asperiores?
+                        </p>
+                        <p class="hidden">
                             Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
                             autem doloremque doloribus a voluptates! Beatae perferendis 
                             at maiores perspiciatis praesentium architecto ad, molestias asperiores?
@@ -89,59 +109,43 @@
         <script src="js/index.js"></script>
 
         <script>
-            // to show menu or hide
-            function toggleMenu() {
-                const menu = document.querySelector(".menu");
-                menu.classList.toggle("active");
-            }
-            //close menu when on click to link
-            document.querySelectorAll(".menuList a").forEach(link => {
-                link.addEventListener("click", () => {
-                    document.querySelector(".menu").classList.remove("active");
+            document.addEventListener("DOMContentLoaded", function () {
+                const elementos = document.querySelectorAll(".hidden");
+
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                        entry.target.classList.add("show"); // Agrega la clase 'show' cuando aparece en pantalla
+                        observer.unobserve(entry.target); // Deja de observar el elemento después de aparecer
+                        }
+                    });
+                }, {
+                    threshold: 0.2 // Se activará cuando el 20% del elemento sea visible
                 });
+
+                elementos.forEach(elemento => observer.observe(elemento));
             });
 
-            //to close cliking anywhere
-            document.addEventListener("click", function (event) {
-                const menu = document.querySelector(".menu");
-                 const burger = document.querySelector(".burger");
-
-                // Si el menú está activo y el clic fue fuera del menú y fuera del icono de hamburguesa
-                if (menu.classList.contains("active") &&
-                    !menu.contains(event.target) &&
-                    !burger.contains(event.target)) {
-                    menu.classList.remove("active");
-                }
+            //noticias incrustadas
+            fetch("https://api.rss2json.com/v1/api.json?rss_url=http://feeds.bbci.co.uk/news/world/rss.xml")
+                .then(response => response.json())
+                .then(data => {
+                    const contenedor = document.getElementById("noticias"); 
+                    const item = data.items[0]; 
+                    const noticiaHTML = `
+                    <div class="noticia">
+                        <h4><a href="${item.link}" target="_blank">${item.title}</a></h4>
+                    </div>`;
+                    contenedor.innerHTML = noticiaHTML;
+                })
+                .catch(error => {
+                    document.getElementById("noticias").innerHTML = "No se pudieron cargar las noticias.";
+                    console.error("Error al cargar noticias:", error);
             });
 
-            //to dropdown the text
-            function toggleText(element) {
-                var moreText = element.previousElementSibling; 
-                if (moreText.style.display === "none" || moreText.style.display === "") {
-                    moreText.style.display = "inline";
-                    element.textContent = "Read less...";
-                } else {
-                    moreText.style.display = "none";
-                    element.textContent = "Read more...";
-                }
-            }
-
-            //dropdown issues
-            const toggleButton = document.getElementById("toggle-menu");
-            const dropdownMenu = document.getElementById("dropdown-menu");
-
-            toggleButton.addEventListener("click", function(e) {
-                e.preventDefault();
-                dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
-            });
-
-            // Cerrar menú si se hace clic fuera
-            document.addEventListener("click", function(e) {
-                if (!dropdownMenu.contains(e.target) && !toggleButton.contains(e.target)) {
-                    dropdownMenu.style.display = "none";
-                }
-            });
         </script>
+
+
 
     </body>
 
