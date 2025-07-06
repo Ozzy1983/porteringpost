@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .main-container{
     display: flex;
     flex-direction: column;
@@ -5,7 +9,28 @@
     align-items: center;
     gap: 20px;
     padding: 20px;
-    
+    margin-top: 10%;
+}
+
+
+.box-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.tit-box{
+    width: 100%;
+    text-transform: uppercase;
+
+}
+
+.tit-box span{
+    color: #a53425;
+    margin-right: 10px;
 }
 
 /*--- BOXGRID ARTICLES ---*/
@@ -14,6 +39,25 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+}
+
+/*color*/
+
+.blue{
+    --clr:#4285F4;
+}
+
+.red{
+    --clr:#db4437;
+}
+
+.yellow{
+    --clr: #f4b400;
+}
+
+.green{
+    --clr: #0f9d58;
 }
 
 .news{
@@ -24,25 +68,42 @@
     gap: 10px;
     min-height: fit-content;
     height: auto;
-    background-color: #f7f7f7;
+    background-color: var(--clr);
     border: 1px solid #e6e8e3;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 2%; 
+    padding: 2%;
+    border-radius: 10px;
+    cursor: pointer; 
 }
 
 
+.box .show{
+    transform: translate(0);
+}
+
+.news .text h4{
+    text-transform: uppercase;
+    color: #d1d1d1;
+}
+
+.news .text .description{
+    color: #e1e1e1;
+}
 
 .news .text{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
+}
 
-    
+.news-text{
+    display: none;
+    color: aliceblue;
 }
 
 .news .text h5{
-    color: gray;
+    color: #f0f0f0;
 }
 
 .news img{
@@ -55,20 +116,41 @@
     margin-right: 10px;
     font-size: 1rem;
 }
-
-/*EFECT SHOW MORE TEXT*/
-.more-text{
-    display: none;
+/* SCROLL EFFECT*/ 
+.entrada {
+    transition-delay: 0.3s;
+    opacity: 0;
+    transform: translateX(0);
+    transition: all 1s cubic-bezier(0.65, 0, 0.35, 1);
+    will-change: opacity, transform;
 }
 
-.read-more{
-    color: #254aa5;
-    cursor: pointer;
-    font-weight: bold;
+.entrada.visible {
+    opacity: 1;
 }
 
-.text-news span{
-    font-weight: bold;
+.entrada.izquierda {
+    transform: translateX(-100px);
+}
+
+.entrada.derecha {
+    transform: translateX(100px);
+}
+
+.entrada.visible.izquierda {
+    transform: translateX(0);
+}
+
+.entrada.visible.derecha {
+    transform: translateX(0);
+}
+
+/*NEWS HOVER*/
+
+.news:hover{
+    display: flex;
+    flex-direction: column;
+    transform: scale(1.5);
 }
 
 /*ADVERTAISING*/
@@ -81,5 +163,17 @@
 }
 
 @media screen and (max-width: 1024px){
+
+    .main-container{
+        margin-top: 0;
+    }
+
+    .box-container{
+        width: 95%;
+    }
+
+    .tit-box {
+        font-size: 18px;
+    }
 
 }
