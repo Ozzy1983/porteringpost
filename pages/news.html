@@ -185,7 +185,7 @@
     
         </div>
 
-        <footer>
+        <nav>
             <div class="menu-icono">
                 <a href="../pages/news.html"><i class="fa-solid fa-newspaper"></i> </a>
                 <a href="../pages/02porterscope.html"><i class="fa-solid fa-moon"></i></a>
@@ -193,7 +193,7 @@
                 <a href="../pages/05porters-of-the-world.html"><i class="fa-solid fa-plane"></i></a>
                 <a href="../pages/06sport-section.html"><i class="fa-solid fa-volleyball"></i> </a>
             </div>
-        </footer>
+        </nav>
 
         <script src="js/index.js"></script>
 
@@ -201,20 +201,19 @@
             const entradas = document.querySelectorAll('.entrada');
 
             entradas.forEach((el, i) => {
-                el.classList.add(i % 2 === 0 ? 'izquierda' : 'derecha');
-                el.style.transitionDelay = `${i * 0.2}s`; // delay escalonado
+            el.classList.add(i % 2 === 0 ? 'izquierda' : 'derecha');
+            el.style.transitionDelay = `${i * 0.2}s`;
             });
 
             const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                } else {
-                    entry.target.classList.remove('visible');
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.classList.contains('visible')) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); 
                 }
-                });
+            });
             }, {
-                threshold: 0.4
+            threshold: 0.4
             });
 
             entradas.forEach(el => observer.observe(el));
