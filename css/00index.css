@@ -31,33 +31,26 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    height: 50px;
+    padding: 1rem;
   
 }
 
-.live div a{
+#noticias a{
     text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-.live-normal{
-    padding: 10px;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.live span{
-    font-size: 11px;
-    font-weight: lighter;
-    color: gray;
+    color: #1e1e1e ;
+    letter-spacing: 0;
 }
 
 .live-color{
     color: red;
     font-size: 14px;
     padding: 10px;
+    animation: blink 1.5s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
 }
 
 /*--- BOX CONTAINER,---*/
@@ -70,13 +63,13 @@
     align-items: center;
     gap: 10px;
     padding: 10px;
-    background-color: beige;
+   
     border: 1px solid #e6e8e3;
-    /*-webkit-animation:color-change-2x 2s linear infinite alternate both;animation:color-change-2x 2s linear infinite alternate both;*/
+    -webkit-animation:color-change-2x 2s linear infinite alternate both;animation:color-change-2x 2s linear infinite alternate both;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     
 }
-/*
+
 .bg-pan-left {
 	-webkit-animation: bg-pan-left 8s both;
 	        animation: bg-pan-left 8s both;
@@ -88,9 +81,9 @@
  * See http://animista.net/license for more info. 
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
-/*
+
 @-webkit-keyframes color-change-2x{0%{background:#C14444}100%{background:#F2C94C}}@keyframes color-change-2x{0%{background:#F6B3B3}100%{background:#FFF3B0}}
-*/
+
 .frontpage .text{
     display: flex;
     flex-direction: column;
@@ -111,17 +104,16 @@
 
 }
 
-/*EFFECT SCROLL*/
-
-.text p {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+/*---scroll down ---*/
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-.text p.visible {
-  opacity: 1;
-  transform: translateY(0);
+.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
@@ -139,11 +131,6 @@
 .text h4{
     text-align: center;
 }
-
-
-
-
-
 
 
 
