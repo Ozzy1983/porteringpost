@@ -38,6 +38,7 @@ header{
     justify-content: center;
     align-items: center;
     height: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     
 }
 
@@ -83,6 +84,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+  
 }
 
 .name-newspaper{
@@ -211,12 +213,13 @@ footer{
     .name-newspaper {
         top: 0;
         width: 100%;
-        background-color:#ca4128; 
+        padding: 10px;
+        grid-template-columns: 1fr 2fr 1fr;
         
     }
 
     .title .name-newspaper h1{
-        font-size: 1rem;
+        font-size: 20px;
     }
 
     .date-issue{
@@ -229,23 +232,12 @@ footer{
         height: 20px;
     }
 
-    .burger{
-        width: 30px;
-        height: 40px;
-    }
-
-    .logo img{
-        width: 40px;
-        height: auto;
-       
-    }
-
     .menu-icono{   
         width: 90%;
     }
 
     .menu-icono i{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .menu-icono a{
@@ -254,7 +246,7 @@ footer{
     }
 
     .name-newspaper i{
-        font-size: 20px;
+        font-size: 15px;
     }
   
     

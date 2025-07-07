@@ -45,29 +45,70 @@ crossword.forEach((row, rowIndex) => {
 
 });
 
-// to dropdown the news
-function toggleMenu() {
-    var menu = document.querySelector(".menu");
-    menu.classList.toggle("active");
+//TIC TOC TAC
+
+const tablero = document.getElementById("tablero");
+const mensaje = document.getElementById("mensaje");
+
+let turno = "X";
+let celdas = [];
+
+function crearTablero() {
+tablero.innerHTML = "";
+celdas = Array(9).fill("");
+for (let i = 0; i < 9; i++) {
+    const celda = document.createElement("div");
+    celda.classList.add("celda");
+    celda.dataset.index = i;
+    celda.addEventListener("click", marcarCelda);
+    tablero.appendChild(celda);
+}
+            mensaje.textContent = "It's time for: " + turno;
+            }
+
+            function marcarCelda(e) {
+            const index = e.target.dataset.index;
+            if (celdas[index] !== "") return;
+
+            celdas[index] = turno;
+            e.target.textContent = turno;
+
+            if (verificarGanador()) {
+                mensaje.textContent = `${turno} Win!`;
+                tablero.querySelectorAll(".celda").forEach(c => c.removeEventListener("click", marcarCelda));
+            } else if (!celdas.includes("")) {
+                mensaje.textContent = "Draw!";
+            } else {
+                turno = turno === "X" ? "O" : "X";
+                mensaje.textContent = "It's time for: " + turno;
+            }
+            }
+
+            function verificarGanador() {
+            const combinaciones = [
+                [0,1,2], [3,4,5], [6,7,8], // filas
+                [0,3,6], [1,4,7], [2,5,8], // columnas
+                [0,4,8], [2,4,6]           // diagonales
+            ];
+            return combinaciones.some(comb => {
+                const [a, b, c] = comb;
+                return celdas[a] && celdas[a] === celdas[b] && celdas[a] === celdas[c];
+            });
+            }
+
+function reiniciar() {
+turno = "X";
+crearTablero();
 }
 
-function toggleText(element) {
-    var moreText = element.previousElementSibling; 
-    if (moreText.style.display === "none" || moreText.style.display === "") {
-        moreText.style.display = "inline";
-        element.textContent = "Read less...";
-    } else {
-        moreText.style.display = "none";
-        element.textContent = "Read more...";
-    }
-}
+crearTablero();
 
 
 // ANOTHER CROSSWORD
 
 function smallCrossword(){
     const gridSmall = document.getElementById("anotherCrossword");
-    for(let i = 0; i <4; i++){
+    for(let i = 0; i <5; i++){
         let input = document.createElement("input");
         input.type = "text";
         input.maxLength = 1;
@@ -77,20 +118,3 @@ function smallCrossword(){
 }
 
 smallCrossword();
-
-
-//dropdown issues
-            const toggleButton = document.getElementById("toggle-menu");
-            const dropdownMenu = document.getElementById("dropdown-menu");
-
-            toggleButton.addEventListener("click", function(e) {
-                e.preventDefault();
-                dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
-            });
-
-            // Cerrar menú si se hace clic fuera
-            document.addEventListener("click", function(e) {
-                if (!dropdownMenu.contains(e.target) && !toggleButton.contains(e.target)) {
-                    dropdownMenu.style.display = "none";
-                }
-            });

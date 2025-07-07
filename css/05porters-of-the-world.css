@@ -9,28 +9,127 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 10%;
 }
 
-/*--- title ---*/
-.container-tit{
+.box-container{
     width: 70%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .tit-box{
-    margin-top: 20px;
-    
+    width: 100%;
     text-transform: uppercase;
+
 }
 
 .tit-box span{
     color: #a53425;
     margin-right: 10px;
 }
+
+
+/*TITLE, SLIDER, FLAG ON THE LETTERS*/
+
+.country-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: beige;
+    border: 1px solid #e6e8e3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    width: 70%;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.flag-letters {
+  font-weight: bold;
+  font-size: 3rem;
+  background: linear-gradient(
+    to bottom,
+    #FF0000,
+    #FFD700,
+    #265e1d,
+    #FF0000,
+    #FFD700,
+    #265e1d
+  );
+  background-size: 100% 300%;
+  background-position: top;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: moveGradient 5s infinite linear;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: top;
+  }
+  100% {
+    background-position: bottom;
+  }
+}
+
+
+/*---*/
+
+.slider-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slider-buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slider-buttons .btn {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider-buttons .btn.active {
+    background-color: #555;
+}
+
+/*---*/
+
+
+
+
 /*--- BOXGRID ARTICLES ---*/
 
 .boxGrid{
@@ -52,9 +151,11 @@
     gap: 10px;
     min-height: fit-content;
     height: auto;
-    background-color: #f7f7f7;
+    padding: 20px;
+    background-color: beige;
     border: 1px solid #e6e8e3;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;  
 }
 
 .news .text{
@@ -135,20 +236,7 @@
 }
 
 
-.uganda-gradient{
-    font-weight: bold;
-    background: linear-gradient(
-        to bottom,
-    #000000, 
-    #FFD700, 
-    #FF0000, 
-    #000000, 
-    #FFD700, 
-    #FF0000
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 
 
 .flag-uganda{
@@ -231,13 +319,33 @@
 
 @media screen and (max-width: 1024px){
 
-    .container-tit{
-        width: 90%;
+    .main-container{
+        margin-top: 0;
+    }
+
+    .box-container{
+        width: 95%;
+    }
+
+    .country-container{
+        width: 95%;
+      
+    }
+
+    .tit-box {
+        font-size: 18px;
+    }
+
+    .description-POW{
+        font-size: 14px;
+        
     }
 
     .boxGrid{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         padding: 0;
     }
@@ -248,6 +356,7 @@
 
     .news{
         grid-template-columns: 1fr;
+        width: 95%;
         min-height: 110px;
         height: auto;
     }
@@ -268,8 +377,12 @@
 
     }
 
+    .clock{
+        width: 130px;
+    }
+
     .inner-clock h3{
-        font-size: 28px;
+        font-size: 25px;
     }
     
 }

@@ -28,3 +28,23 @@ setInterval(() => {
 // Ejecutar al cargar
 updateClock("london-clock", 0);
 updateClock("kampala-clock", 6);
+
+
+//SLIDER
+
+let currentSlide = 0;
+
+function showSlide(index) {
+  const slides = document.querySelectorAll('.slide');
+  const buttons = document.querySelectorAll('.btn');
+
+  slides.forEach((slide, i) => {
+    slide.classList.remove('active');
+    buttons[i].classList.remove('active');
+  });
+
+  slides[index].classList.add('active');
+  buttons[index].classList.add('active');
+
+  currentSlide = index;
+}

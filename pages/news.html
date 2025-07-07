@@ -44,7 +44,7 @@
             
                 <div class="boxGrid">
 
-                    <div class="news blue entrada salida" onclick="toggleNews(this)">
+                    <div class="news blue entrada contenedor" onclick="toggleNews(this);cambiarLayout(this)">
                         <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
                         <div class="text">
                             <h4>Title article</h4>
@@ -59,7 +59,7 @@
                         </div>              
                     </div>
 
-                    <div class="news red entrada salida" onclick="toggleNews(this)">
+                    <div class="news red entrada contenedor" onclick="toggleNews(this);cambiarLayout(this)">
                         <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
                         <div class="text">
                             <h4>Title article</h4>
@@ -74,7 +74,7 @@
                         </div>              
                     </div>
 
-                    <div class="news yellow entrada salida" onclick="toggleNews(this)">
+                    <div class="news yellow entrada contenedor" onclick="toggleNews(this);cambiarLayout(this)">
                         <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
                         <div class="text">
                             <h4>Title article</h4>
@@ -89,7 +89,7 @@
                         </div>              
                     </div>
 
-                    <div class="news green entrada salida" onclick="toggleNews(this)">
+                    <div class="news green entrada contenedor" onclick="toggleNews(this);cambiarLayout(this)">
                         <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
                         <div class="text">
                             <h4>Title article</h4>
@@ -116,8 +116,9 @@
                     
                         </div>
                     </div>
+                    <!---->
 
-                    <div class="news blue entrada salida" onclick="toggleNews(this)">
+                    <div class="news blue entrada contenedor" onclick="toggleNews(this);cambiarLayout(this)">
                         <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
                         <div class="text">
                             <h4>Title article</h4>
@@ -132,7 +133,7 @@
                         </div>              
                     </div>
 
-                    <div class="news red entrada salida" onclick="toggleNews(this)">
+                    <div class="news red entrada contenedor" onclick="toggleNews(this);cambiarLayout(this)">
                         <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
                         <div class="text">
                             <h4>Title article</h4>
@@ -147,7 +148,7 @@
                         </div>              
                     </div>
 
-                    <div class="news yellow entrada salida" onclick="toggleNews(this)">
+                    <div class="news yellow entrada contenedor" onclick="toggleNews(this);cambiarLayout(this)">
                         <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
                         <div class="text">
                             <h4>Title article</h4>
@@ -162,7 +163,7 @@
                         </div>              
                     </div>
 
-                    <div class="news green entrada salida" onclick="toggleNews(this)">
+                    <div class="news green entrada contenedor" onclick="toggleNews(this);cambiarLayout(this)">
                         <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
                         <div class="text">
                             <h4>Title article</h4>
@@ -197,37 +198,7 @@
 
         <script src="js/index.js"></script>
 
-        <script>
-            const entradas = document.querySelectorAll('.entrada');
-
-            entradas.forEach((el, i) => {
-            el.classList.add(i % 2 === 0 ? 'izquierda' : 'derecha');
-            el.style.transitionDelay = `${i * 0.2}s`;
-            });
-
-            const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting && !entry.target.classList.contains('visible')) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target); 
-                }
-            });
-            }, {
-            threshold: 0.4
-            });
-
-            entradas.forEach(el => observer.observe(el));
-
-            /*text */
-            function toggleNews(element) {
-                const texto = element.querySelector(".news-text");
-                if (texto.style.display === "block") {
-                texto.style.display = "none";
-                } else {
-                texto.style.display = "block";
-                }
-            }
-        </script>
+        <script src="../js/news.js"></script>
 
 
        

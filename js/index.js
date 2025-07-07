@@ -14,6 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     );
 
-    const paragraph = document.querySelector(".text p");
+    const paragraph = document.querySelector(".text-effect");
     observer.observe(paragraph);
 });

@@ -38,44 +38,118 @@
 
         <div class="main-container">
 
-            <h2 class="tit-box"><span>❖</span>Crossword</h2>
+            <div class="box-container">
 
-            <div class="crossword">
+                <h2 class="tit-box"><span>❖</span>Crossword</h2>
 
-                <div class="grid" id="grid"></div>
+                <div class="crossword red entrada">
 
-                <div class="clues">
-                    <!--You can write the clues for the crossword below here-->
-                    <div class="clues-box">
-                        <h4>ACROSS</h4>
-                        <ul>
-                            <li><span>1</span> Distant sun (4)</li>
-                            <li><span>3</span> Jacques - - -, underwater explorer (8)</li>
-                            <li><span>8</span> Explosives ingredient (13)</li>
-                            <li><span>12</span> City on the River Tay (6)</li>
-                            <li><span>16</span> Furtive, sly (6)</li>
-                            <li><span>20</span> BBC religious programme (5,2,6)</li>
-                            <li><span>23</span> Optician’s sight checker (3,5)</li>
-                            <li><span>24</span> Novel, - - - of the Flies (4)</li>
-                        </ul>
-                    </div>
-                    <div class="clues-box">
-                        <h4>DOWN</h4>
-                        <ul>
-                            <li><span>1</span> Church assembly (5)</li>
-                            <li><span>2</span> Prestige car, - - - Martin (5)</li>
-                            <li><span>3</span> North Sea fuel (3)</li>
-                            <li><span>4</span> Tip of corn (3)</li>
-                            <li><span>5</span> Vase for ashes (3)</li>
-                            <li><span>6</span> Unemployment benefit (4)</li>
-                            <li><span>7</span> Affirmative reply (3)</li>
-                            <li><span>12</span> - - - out, make last (3)</li>
-                            <li><span>14</span> Sort (3)</li>
-                            <li><span>15</span> Flying saucer? (1,1,1)</li>
-                        </ul>
+                    <div class="grid" id="grid"></div>
+
+                    <div class="clues">
+                        <div class="clues-box">
+                            <h4>ACROSS</h4>
+                            <ul>
+                                <li><span>1</span> Distant sun (4)</li>
+                                <li><span>3</span> Jacques - - -, underwater explorer (8)</li>
+                                <li><span>8</span> Explosives ingredient (13)</li>
+                                <li><span>12</span> City on the River Tay (6)</li>
+                                <li><span>16</span> Furtive, sly (6)</li>
+                                <li><span>20</span> BBC religious programme (5,2,6)</li>
+                                <li><span>23</span> Optician’s sight checker (3,5)</li>
+                                <li><span>24</span> Novel, - - - of the Flies (4)</li>
+                            </ul>
+                        </div>
+                        <div class="clues-box">
+                            <h4>DOWN</h4>
+                            <ul>
+                                <li><span>1</span> Church assembly (5)</li>
+                                <li><span>2</span> Prestige car, - - - Martin (5)</li>
+                                <li><span>3</span> North Sea fuel (3)</li>
+                                <li><span>4</span> Tip of corn (3)</li>
+                                <li><span>5</span> Vase for ashes (3)</li>
+                                <li><span>6</span> Unemployment benefit (4)</li>
+                                <li><span>7</span> Affirmative reply (3)</li>
+                                <li><span>12</span> - - - out, make last (3)</li>
+                                <li><span>14</span> Sort (3)</li>
+                                <li><span>15</span> Flying saucer? (1,1,1)</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+
+                <div class="news yellow entrada" onclick="toggleNews(this)">
+                    <div class="picture"><img src="../assets/img/01index/jason.jpg" alt=""></div>
+                    <div class="text">
+                        <h5 class="description">Dear Jason, I'm feeling lost and unsure of my purpose in life. What should I do?</h5>
+                        <p class="news-text">
+                            Whe you're fishing, it's not always about knowing exactly where the fish are;
+                            Sometimes you have to explore the water. Drift along, cast out here an there, and trust the current
+                            to guide you. Life is like that too. You don't always need to know yoour exact purpose. 
+                            It's ok to drift and try different things until you find sometimes that tugs at your line.
+                            Purpose, like a good catch, comes when you least except it. Just keep casting and enjoy the journey.
+                            You'll find your spot eventually.                           
+                        </p>
+                        <h5><span class="bullet">❖</span>Todd's Top Tips</h5>
+                    </div>              
+                </div>
+
+                <h2 class="tit-box"><span>❖</span>Tic tac toe</h2>
+
+                <div class="tic-tac-toe blue entrada"> 
+                    <div id="tablero"></div>
+                    <div id="mensaje"></div>
+                    <button onclick="reiniciar()">Restart</button>
+                </div>
+
+                <div class="crossword green entrada">
+                    <div class="picture"><img src="../assets/img/default.webp" alt=""></div>
+                    <div class="text">
+                        <h4>Did you know?</h4>
+                        <p>
+                            There are around 996 in-patient beds in Southmead Hospital.
+                            That's almost as  many as number of the breaks some Porters
+                            take a week!
+                        </p>
+                    </div>              
+                </div>
+
+                <div class="news red entrada" onclick="toggleNews(this)">
+                    <div class="picture"><img src="../assets/img/01index/malcom.png" alt=""></div>
+                    <div class="text">
+                        <h5 class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                        <p class="news-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Laudantium dolore pariatur aliquid assumenda vel voluptas excepturi nulla dolorum placeat cupiditate quo, 
+                            ea vitae tempore, animi vero, eos quia voluptates dolorem?                         
+                        </p>
+                        <h5><span class="bullet">❖</span>Malcom's Movies</h5>
+                    </div>              
+                </div>
+
+                <div class="crossword blue entrada">
+                    <div class="picture"><img src="../assets/img/default.webp" alt="" id="monkey"></div>
+                    <div class="text">
+                        <h4>Caption Competition</h4>
+                        <form action="">
+                            <textarea name="" id="campComp"></textarea>
+                        </form>
+                    </div>              
+                </div>
+
+                <div class="smallcrossword red entrada" id="target2">
+                    
+                    <div class="text">
+                        <h4>Minute Cryptic</h4>
+                        <p>
+                            Object HR interviewing notorious gang leaders(5)
+                        </p>
+                        <div class="gridSmall" id="anotherCrossword"></div>
+                    </div>   
+                </div>
+
             </div>
+            
             
         </div>
 
@@ -90,6 +164,8 @@
         </footer>
 
         <script src="../js/crossword.js"></script>
+
+        <script src="../js/news.js"></script>
 
     </body>
 
