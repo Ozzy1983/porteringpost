@@ -94,7 +94,7 @@ header{
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
     padding: 20px;
-    background-color: #ca4128;
+    background-color: #1f5b3e;
     top: 50px;
     position: fixed; 
     z-index: 1000; 
@@ -103,7 +103,7 @@ header{
 
 .name-newspaper i{
     text-align: center;
-    color: #ffffa3;
+    color: #ffd966;
     font-size: 50px;
     text-shadow:
     -0.5px -0.5px 0 black,
