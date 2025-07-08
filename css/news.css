@@ -90,7 +90,7 @@ body{
 }
 
 .news .text h4{
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .news .text{
