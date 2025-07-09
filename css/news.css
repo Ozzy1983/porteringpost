@@ -7,11 +7,11 @@
 }
 
 body{
-    padding-top: 100px;
     padding-bottom: 80px;
 }
 
 .main-container{
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,8 +44,8 @@ body{
 /*--- BOXGRID ARTICLES ---*/
 
 .boxGrid{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 
 }
@@ -76,7 +76,7 @@ body{
     gap: 10px;
     min-height: fit-content;
     height: auto;
-    background-color: var(--clr);
+    background-color: #dfece6;
     border: 1px solid #e6e8e3;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 2%;
@@ -100,14 +100,23 @@ body{
     gap: 10px;
 }
 
-.news-text{
-    display: none;
-    color: aliceblue;
+/*title of article*/
+.news .text h4{
+    color: #c46564;
 }
 
-.news .text{
-    color: #f0f0f0;
+/*description of news*/
+.text .description{
+    color: #353634;
 }
+
+/* hidden text */
+.news-text{
+    display: none;
+    color: #2b2b2b;
+}
+
+
 
 .news img{
     width: 100%;
@@ -171,11 +180,20 @@ body{
     }
 
     .main-container{
-        margin-top: 0;
+        margin-top: 50px;
+        padding: 0;
     }
 
     .box-container{
         width: 95%;
+        padding-top: 20px;
+    }
+
+    .boxGrid{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
     }
 
     .tit-box {

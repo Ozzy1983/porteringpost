@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="../header.css">
         <link rel="stylesheet" href="../css/02porterscope.css">
+        <link rel="stylesheet" href="../css/news.css">
         <meta name="robots" content="index, follow">
         <title>Portering Post - Porterscope</title>
         <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
@@ -153,20 +154,38 @@
                     </div>
                     
                 </div>
-                
-                <div class="joshGardner">
-                    <img src="../assets/img/03porterscope/josh.jpg" alt="">
-                    <div class="text-gardner">
-                        <h4>Philosophical ponderings <br> with <br> Josh Gardner</h4>
-                        <p class="uno">
-                            More existencial musings from our very own Philosopher of Portering
-                        </p>
-                        <p class="dos">
-                            "The realisation that life is absurd cannot be an end, but only a beginning."
-                        </p>
-    
+
+                <div class="boxGrid">
+
+                    <div class="joshGardner" >
+                        <div class="picture"><img src="../assets/img/03porterscope/josh.jpg" alt=""></div>
+                        <div class="text-gardner">
+                            <h4>Philosophical ponderings <br> with <br> Josh Gardner</h4>
+                            <p class="uno">
+                                More existencial musings from our very own Philosopher of Portering
+                            </p>
+                            <p class="dos">
+                                "The realisation that life is absurd cannot be an end, but only a beginning."
+                            </p>
+                        </div>              
                     </div>
+
+                    <div class="news blue entrada contenedor" onclick="toggleNews(this);cambiarLayout(this)">
+                        <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
+                        <div class="text">
+                            <h4>Come si dice</h4>
+                            <h5 class="description"></h5>
+                            <p class="news-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum vitae aperiam sapiente distinctio a autem quas officia ea fugit, magnam dolorem, aut exercitationem alias doloribus maxime aliquid? In, doloribus facilis?                           
+                            </p>
+                            <h5><span class="bullet">❖</span>Bylines</h5>
+                        </div>              
+                    </div>
+
+
+
                 </div>
+                
             </div>
           
         </div>
@@ -182,6 +201,7 @@
         </footer>
 
         <script src="../js/crossword.js"></script>
+        <script src="../js/news.js"></script>
 
         <script>
             function toggleZodiac(zodiac) {

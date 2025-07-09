@@ -6,6 +6,7 @@
 
 body{
     padding-bottom: 60px;
+    background-color: #a8bf9b;
 }
 
 :root {
@@ -35,10 +36,9 @@ p {
 header{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: auto;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    height: 40px;
+    background-color: #a8bf9b; 
     
 }
 
@@ -47,8 +47,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
-    height: auto;
+    color: #2b2b2b;
+    margin-top: 10px;
+    height: 20px;
     width: 70%;
     
 }
@@ -58,6 +59,7 @@ header{
     align-items: center;
     justify-content: center;
     border: 1px solid black;
+    
     width: 150px;
     height: 30px;
     margin-left: 10px;
@@ -71,11 +73,7 @@ header{
     justify-content: center;
 }
 
-.issue a{
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-}
+
 
 
 /*TITLE*/
@@ -104,30 +102,30 @@ header{
 .name-newspaper i{
     text-align: center;
     color: #ffd966;
-    font-size: 50px;
-    text-shadow:
+    font-size: 1.5rem;
+    /*text-shadow:
     -0.5px -0.5px 0 black,
      0.5px -0.5px 0 black,
     -0.5px  0.5px 0 black,
-     0.5px  0.5px 0 black;
+     0.5px  0.5px 0 black;*/
 }
 
 .name-newspaper a{
     text-decoration: none;
-    color: #ffffa3;
+    color: #ffd966;
     text-align: center;
 }
 
 .title h1{
     text-align: center;
     font-family: 'UnifrakturMaguntia', serif;
-    font-size: 50px;
+
     font-weight: bold;
-    text-shadow:
+    /*text-shadow:
     -0.5px -0.5px 0 black,
      0.5px -0.5px 0 black,
     -0.5px  0.5px 0 black,
-     0.5px  0.5px 0 black;
+     0.5px  0.5px 0 black;*/
 }
 
 
@@ -141,22 +139,23 @@ footer{
     bottom: 0;
     left: 0;
     z-index: 10001;
+    
 }
 
 .menu-icono{   
-    width: 70%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10%;
     border-radius: 20px;
     background-color: #ca4128;
-    padding: 1%;
+    padding: 10px;
 }
 
 .menu-icono a{
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: #ffffa3;
     display: flex;
@@ -168,7 +167,7 @@ footer{
 
 .menu-icono i{
     color: black;
-    font-size: 40px;
+    font-size: 1.5rem;
 }
 
 .menu-icono i:hover{
@@ -206,8 +205,12 @@ footer{
         font-size: 1rem; /* 16px */
     }
 
+
     .date-issue{
+        width: 100%;
         margin-top: 70px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     .name-newspaper {
@@ -220,10 +223,6 @@ footer{
 
     .title .name-newspaper h1{
         font-size: 20px;
-    }
-
-    .date-issue{
-        width: 90%;
     }
 
 

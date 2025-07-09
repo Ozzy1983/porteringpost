@@ -41,9 +41,8 @@
             <div class="box-container">
 
                 <div class="live"> 
-                    <div>
-                        <p class="live-color">LIVE</p>
-                    </div>
+                    
+                    <h5 class="live-color">LIVE</h5>
 
                     <div id="noticias"></div>
                     
@@ -134,12 +133,12 @@
                     const item = data.items[0]; 
                     const noticiaHTML = `
                     <div class="noticia">
-                        <h4><a href="${item.link}" target="_blank">${item.title}</a></h4>
+                        <h5><a href="${item.link}" target="_blank">${item.title}</a></h5>
                     </div>`;
                     contenedor.innerHTML = noticiaHTML;
                 })
                 .catch(error => {
-                    document.getElementById("noticias").innerHTML = "No se pudieron cargar las noticias.";
+                    document.getElementById("noticias").innerHTML = "Loading";
                     console.error("Error al cargar noticias:", error);
             });
 
