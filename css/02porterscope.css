@@ -68,6 +68,7 @@
 
 .zodiac:hover{
     transform: scale(1.5);
+    background-color: beige;
 }
 
 /*Josh Gardner filosofo*/
