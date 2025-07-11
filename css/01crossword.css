@@ -4,13 +4,14 @@
 
 .crossword{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: var(--clr);
+    background-color: #dfece6;
     border: 1px solid #e6e8e3;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    width: 70%;
+    width: 100%;
     gap: 20px;
     border-radius: 10px;
 
@@ -71,7 +72,6 @@
 .clues-box ul li{
     list-style: none;
 }
-
 
 
 /*tic tac toc*/
@@ -203,6 +203,8 @@ button:hover{
     .cell {
         font-size: 12px;
     }
+
+   
 
     .clues {
         grid-template-columns: 1fr;
