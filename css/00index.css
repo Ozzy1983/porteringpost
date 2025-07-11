@@ -34,19 +34,35 @@
     gap: 10px;
     padding: 20px;
     width: 70%;
+    background-color: aliceblue;
+    margin-bottom: 20px;
 }
 
 #noticias{
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 #noticias a{
     text-decoration: none;
     color: #1e1e1e;
+  
+}
+
+.live-color i{
+    font-size: 10px;
+    
 }
 
 
 .live-color{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 2px;
+    gap: 2px;
     color: red;
     animation: blink 1.5s ease-in-out infinite;
 }
