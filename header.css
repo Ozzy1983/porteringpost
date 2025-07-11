@@ -149,7 +149,7 @@ footer{
     justify-content: center;
     gap: 10%;
     border-radius: 20px;
-    background-color: #ca4128;
+    background-color: #1f5b3e;
     padding: 10px;
 }
 
@@ -157,7 +157,7 @@ footer{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #ffffa3;
+    background-color: #ffd966;
     display: flex;
     align-items: center;
     justify-content: center;
