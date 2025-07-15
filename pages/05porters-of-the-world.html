@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="../header.css">
+        <link rel="stylesheet" href="../css/news.css">
         <link rel="stylesheet" href="../css/05porters-of-the-world.css">
         <meta name="robots" content="index, follow">
         <title>Portering Post - Editorial</title>
@@ -40,6 +41,7 @@
         <div class="main-container">
 
             <div class="box-container">
+
                 <h2 class="tit-box"><span>❖</span>Porters of the world!</h2>
 
                 <div class="country-container">
@@ -47,14 +49,14 @@
                         In this edition we will be turn our spotlight upon: 
                     </p>  
 
-                    <h1 class="flag-letters">COUNTRY</h1>
+                    <h1 class="flag-letters">Republic of Korea</h1>
 
                     <!--Slider poner fotos-->
                     <div class="slider-container">
                         <div class="slider">
-                            <img src="../assets/img/06porter of world/img1.png" class="slide active" alt="Image 1">
-                            <img src="../assets/img/06porter of world/img2.jpg" class="slide" alt="Image 2">
-                            <img src="../assets/img/06porter of world/img3.jpg" class="slide" alt="Image 3">
+                            <img src="../assets/img/06porter of world/korea1.png" class="slide active" alt="Image 1">
+                            <img src="../assets/img/06porter of world/korea2.png" class="slide" alt="Image 2">
+                            <img src="../assets/img/06porter of world/Korea3.png" class="slide" alt="Image 3">
                         </div>
 
                         <div class="slider-buttons">
@@ -68,15 +70,16 @@
 
 
                 <div class="boxGrid">
-                    <div class="news" id="target0">
+                    <div class="news-world entrada contenedor" onclick="toggleNews(this);cambiarLayout(this)">
                         <div class="video-container">
-                            <iframe  
-                                src="https://www.youtube.com/embed/LXb3EKWsInQ" 
-                                title="COSTA RICA IN 4K 60fps HDR (ULTRA HD)" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                referrerpolicy="strict-origin-when-cross-origin" 
-                                allowfullscreen>
+                            <iframe 
+                            width="1310" 
+                            height="737" 
+                            src="https://www.youtube.com/embed/zTK119W8MBA" 
+                            title="Geography Now! SOUTH KOREA (ROK)" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                             </iframe>
                         </div>
                         <div class="text">
@@ -92,39 +95,43 @@
                         </div>              
                     </div>
 
-                    <div class="news" id="target1">                  
-                        <div class="picture"><img src="../../../assets/img/wheelchair.png" alt=""></div>
+                    <div class="news entrada contenedor" onclick="toggleNews(this);cambiarLayout(this)">
+                        <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
                         <div class="text">
-                            <h4>Title article</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    <span class="more-text">
-                                        Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
-                                        autem doloremque doloribus a voluptates! Beatae perferendis at maiores perspiciatis praesentium architecto ad, molestias asperiores?
-                                    </span>
-                                    <span class="read-more" onclick="toggleText(this)">Read more...</span>
-                                </p>
+                            <h4>Todd In Wallet Opening Shocker!</h4>
+                            <h5 class="description">Paramedics were on scene immediately to check his vital signs</h5>
+                            <p class="news-text">
+                                In a shock turn of events that almost saw Jason end up in A&E, he was seen actually 
+                                putting his hand in his pocket to buy Gary a pint. Paramedics were on scene 
+                                immediately to check his vital signs and for any damage caused to his elbow and 
+                                shoulder from this unprecedented action. Those in attendance were shocked but 
+                                impressed at this display of generosity. The rare moths found living within have now 
+                                been safely rehoused to a more permanent location in the wallet of Simon Norton 
+                                where they won’t be disturbed.                             
+                            </p>
                             <h5><span class="bullet">❖</span>Bylines</h5>
-                        </div>  
+                        </div>              
                     </div>
 
-                    <div class="news" id="target2">
-                        <div class="picture"><img src="../../../assets/img/wheelchair.png" alt=""></div>
+                    <div class="news entrada contenedor" onclick="toggleNews(this);cambiarLayout(this)">
+                        <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
                         <div class="text">
-                            <h4>Title article</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    <span class="more-text">
-                                        Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
-                                        autem doloremque doloribus a voluptates! Beatae perferendis at maiores perspiciatis praesentium architecto ad, molestias asperiores?
-                                    </span>
-                                    <span class="read-more" onclick="toggleText(this)">Read more...</span>
-                                </p>
+                            <h4>Todd In Wallet Opening Shocker!</h4>
+                            <h5 class="description">Paramedics were on scene immediately to check his vital signs</h5>
+                            <p class="news-text">
+                                In a shock turn of events that almost saw Jason end up in A&E, he was seen actually 
+                                putting his hand in his pocket to buy Gary a pint. Paramedics were on scene 
+                                immediately to check his vital signs and for any damage caused to his elbow and 
+                                shoulder from this unprecedented action. Those in attendance were shocked but 
+                                impressed at this display of generosity. The rare moths found living within have now 
+                                been safely rehoused to a more permanent location in the wallet of Simon Norton 
+                                where they won’t be disturbed.                             
+                            </p>
                             <h5><span class="bullet">❖</span>Bylines</h5>
-                        </div>   
+                        </div>              
                     </div>
 
-                    <div class="news" id="target3">
+                    <div class="news-world entrada contenedor" onclick="toggleNews(this);cambiarLayout(this)">
                         <div class="text">
                             <h4>¿Hablas Español?</h4>
                             <p>
@@ -156,20 +163,22 @@
                         </div> 
                     </div>
 
-                    <div class="news" id="target4">
-                        <div class="picture"><img src="../../../assets/img/wheelchair.png" alt=""></div>
+                    <div class="news red entrada contenedor" onclick="toggleNews(this);cambiarLayout(this)">
+                        <div class="picture"><img src="../assets/img/Army.jpg" alt=""></div>
                         <div class="text">
-                            <h4>Title article</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    <span class="more-text">
-                                        Molestiae assumenda magnam libero dolorum? Exercitationem ea, 
-                                        autem doloremque doloribus a voluptates! Beatae perferendis at maiores perspiciatis praesentium architecto ad, molestias asperiores?
-                                    </span>
-                                    <span class="read-more" onclick="toggleText(this)">Read more...</span>
-                                </p>
+                            <h4>Todd In Wallet Opening Shocker!</h4>
+                            <h5 class="description">Paramedics were on scene immediately to check his vital signs</h5>
+                            <p class="news-text">
+                                In a shock turn of events that almost saw Jason end up in A&E, he was seen actually 
+                                putting his hand in his pocket to buy Gary a pint. Paramedics were on scene 
+                                immediately to check his vital signs and for any damage caused to his elbow and 
+                                shoulder from this unprecedented action. Those in attendance were shocked but 
+                                impressed at this display of generosity. The rare moths found living within have now 
+                                been safely rehoused to a more permanent location in the wallet of Simon Norton 
+                                where they won’t be disturbed.                             
+                            </p>
                             <h5><span class="bullet">❖</span>Bylines</h5>
-                        </div>   
+                        </div>              
                     </div>
 
                 
@@ -200,34 +209,28 @@
 
                         </div>
                    
+                    </div>
+
+                    <div class="news">
+                        <h2>Currency</h2>
+                        <h4>
+                            The currency of country is
+                            the Colón (CRC)
+                            ₡
+                        </h4>
+                        <img src="../assets/img/Army.jpg" alt="">
+
+                        <p>
+                            <a href="https://wise.com/us/currency-converter/gbp-to-crc-rate/chart" target="_blank">
+                                Wise - GBP/CRC
+                            </a>
+                        </p>
+                    </div>
+                    
+
                 </div>
 
-                <div class="news" id="target5">
-                    <h2>Currency</h2>
-                    <h4>
-                        The currency of country is
-                        the Colón (CRC)
-                        ₡
-                    </h4>
-                    <img src="../../../assets/img/wheelchair.png" alt="">
-
-                    <p>
-                        <a href="https://wise.com/us/currency-converter/gbp-to-crc-rate/chart" target="_blank">
-                            Wise - GBP/CRC
-                        </a>
-                    </p>
-                </div>
-                
-
-            </div>
-
-            </div>
-
-            
-
-          
-
-            
+            </div> 
           
         </div>
 
@@ -243,6 +246,7 @@
 
         <script src="../js/crossword.js"></script>
         <script src="../js/porters-of-the-world.js"></script>
+         <script src="../js/news.js"></script>
 
     </body>
 
