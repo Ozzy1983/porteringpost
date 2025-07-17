@@ -22,29 +22,40 @@ function updateClock(id, offsetHours) {
 // Actualizar cada segundo
 setInterval(() => {
     updateClock("london-clock", 0);     // GMT
-    updateClock("kampala-clock", 6);    // GMT+6
+    updateClock("kampala-clock", 8);    // GMT+8
 }, 1000);
 
 // Ejecutar al cargar
 updateClock("london-clock", 0);
-updateClock("kampala-clock", 6);
+updateClock("kampala-clock", 8);
 
 
 //SLIDER
 
-let currentSlide = 0;
+const slideContainer = document.getElementById("slideContainer");
+const totalSlides = slideContainer.children.length;
+let currentIndex = 0;
 
-function showSlide(index) {
-  const slides = document.querySelectorAll('.slide');
-  const buttons = document.querySelectorAll('.btn');
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % totalSlides;
+  slideContainer.style.transform = `translateX(-${300 * currentIndex}px)`;
+}, 5000); // cambia cada 5 segundos
 
-  slides.forEach((slide, i) => {
-    slide.classList.remove('active');
-    buttons[i].classList.remove('active');
-  });
+// SECOND SLIDER
 
-  slides[index].classList.add('active');
-  buttons[index].classList.add('active');
+const slides = document.querySelectorAll(".slide");
+let currentIndex2 = 0;
 
-  currentSlide = index;
+document.getElementById("nextBtn").addEventListener("click", () => {
+  changeSlide(currentIndex2 + 1);
+});
+
+document.getElementById("prevBtn").addEventListener("click", () => {
+  changeSlide(currentIndex2 - 1);
+});
+
+function changeSlide(index) {
+  slides[currentIndex2].classList.remove("active");
+  currentIndex2 = (index + slides.length) % slides.length;
+  slides[currentIndex2].classList.add("active");
 }

@@ -1,15 +1,15 @@
 //CROSSWORD
 
 const crossword = [
-    [{ letter: '', number: 1 }, '', { letter: '', number: 2 }, '', {black: true}, {letter: '', number: 3}, { letter: '', number: 4 }, '', '', '', { letter: '', number: 5 }, '', { letter: '', number: 6 }],
-    ['',{black: true}, '',{black: true}, { letter: '', number: 7}, {black: true}, '', {black: true}, {black: true}, {black: true}, '', {black: true}, ''],
-    [{ letter: '', number: 8 }, '', '', '', '', '', '', {letter: '', number: 9}, '', {letter: '', number: 10}, '', {letter: '', number: 11}, ''],
-    ['', {black: true}, '', {black: true}, '', {black: true}, {black: true}, '', {black: true}, '',{black: true}, '',{black: true}],
-    [{letter: '', number: 12}, {letter: '', number: 13}, '', {letter: '', number: 14}, '', {letter: '', number: 15}, {black: true}, { letter: '', number: 16}, {letter: '', number: 17}, '',{ letter: '', number: 18}, '', {letter: '', number: 19}],
-    [{black: true}, '', {black: true}, '', {black: true}, '', {black: true}, {black: true}, '', {black: true}, '', {black: true}, ''],
-    [{letter: '', number: 20}, '', {letter: '', number: 21},'', '', '', {letter: '', number: 22}, '', '', '', , '', '', ''],
-    ['', {black: true}, '', {black: true}, {black: true}, {black: true}, '', {black: true}, '', {black: true}, '', {black: true}, ''],
-    [{ letter: '', number: 23}, '', '', '', '', '', '', '', {black: true}, { letter: '', number: 24}, '', '', ''],
+    [{ letter: '', number: 1 }, '', '', { letter: '', number: 2 }, {black: true}, {letter: '', number: 3}, {black: true}, { letter: '', number: 4 }, {black: true}, { letter: '', number: 5 }, '', '', { letter: '', number: 6 }],
+    ['',{black: true}, {black: true}, { letter: '', number: 7}, '', '', '', '', '', '', {black: true}, {black: true}, ''],
+    [{ letter: '', number: 8 }, '', '', '', {black:true}, '',{black:true}, '',{black:true}, { letter: '', number: 9 }, '', '', '' ],
+    ['', {black: true}, {black: true}, { letter: '', number: 10}, '', '', { letter: '', number: 11}, '', '', '', {black: true}, {black: true}, '' ],
+    [{letter: '', number: 12}, '', '', '', {black: true}, {black: true}, '', {black: true}, {black: true}, { letter: '', number: 13}, '', '', ''],
+    ['', {black: true}, {black: true}, { letter: '', number: 14}, '', { letter: '', number: 15}, '', { letter: '', number: 16}, '', '', {black: true}, {black: true}, '' ],
+    [{letter: '', number: 17}, '', '', '', {black: true}, '', {black: true}, '', {black: true}, { letter: '', number: 18}, '', '', '' ],
+    ['', {black: true}, {black: true}, {letter: '', number: 19}, '', '', '', '', '', '', {black: true}, {black: true}, '' ],
+    [{ letter: '', number: 20}, '', '', '', {black: true}, '', {black: true}, '', {black: true}, { letter: '', number: 21}, '', '', ''],
 ];
 
 const grid = document.getElementById("grid");
@@ -86,9 +86,9 @@ for (let i = 0; i < 9; i++) {
 
             function verificarGanador() {
             const combinaciones = [
-                [0,1,2], [3,4,5], [6,7,8], // filas
-                [0,3,6], [1,4,7], [2,5,8], // columnas
-                [0,4,8], [2,4,6]           // diagonales
+                [0,1,2], [3,4,5], [6,7,8], 
+                [0,3,6], [1,4,7], [2,5,8], 
+                [0,4,8], [2,4,6]           
             ];
             return combinaciones.some(comb => {
                 const [a, b, c] = comb;
@@ -108,7 +108,7 @@ crearTablero();
 
 function smallCrossword(){
     const gridSmall = document.getElementById("anotherCrossword");
-    for(let i = 0; i <5; i++){
+    for(let i = 0; i <6; i++){
         let input = document.createElement("input");
         input.type = "text";
         input.maxLength = 1;
