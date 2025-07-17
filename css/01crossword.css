@@ -8,13 +8,17 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #dfece6;
+    background-color: beige;
     border: 1px solid #e6e8e3;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     width: 100%;
     gap: 20px;
     border-radius: 10px;
 
+}
+
+.crossword .text h4{
+    color: #c46564;
 }
 
 .grid {
@@ -56,13 +60,19 @@
     height: auto;
 }
 
+.clues h4{
+    color: #c46564;
+}
+
 .clues-box{
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 10px;
-    background-color: white;
+    background: #fff;
+    border: 1px solid #e6e8e3;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
 }
 
 .clues-box span{
@@ -73,18 +83,31 @@
     list-style: none;
 }
 
+/*GAMES STRUCTURE*/
+
+.games{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.games h4{
+    color: #c46564;
+}
 
 /*tic tac toc*/
 
 .tic-tac-toe{
-    width: 70%;
-    background-color: var(--clr);
+    width: 100%;
+    background-color: beige;
     border: 1px solid #e6e8e3;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     padding: 20px;
-
+    text-align: center;
 }
+
+
 
 #tablero {
     display: grid;
@@ -135,88 +158,138 @@ button:hover{
     background-color: #a53425;
 }
 
+/*CAPTION COMPETITION*/
+
+.caption{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: beige;
+    border: 1px solid #e6e8e3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.caption .text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+}
+
+.caption textarea{
+    width: 70%;
+}
 
 /*--- SMALL CROSSWORD ---*/
 
 .smallcrossword{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: 10px;
     padding: 20px;
     border-radius: 10px;
-    background-color: var(--clr);
+    background-color: beige;
     border: 1px solid #e6e8e3;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 70%;
+    width: 100%;
 }
 
-.smallcrossword .text .gridSmall{
+.smallcrossword .gridSmall{
     display: grid;
-    grid-template-columns: repeat(5, 40px);
+    grid-template-columns: repeat(6, 40px);
     justify-content: center;
-    
     gap: 5px;
 }
 
-.smallcrossword .text .cell2{
+.smallcrossword .cell2{
     width: 40px;
     height: 40px;
     text-align: center;
     border: 1px solid black;
 }
 
+/*Did you know?*/
 
+.did-you-know .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+    
+}
 
 
 @media screen and (max-width: 1024px){
-    
-    .main-container{
-        margin-top: 0;
-    }
-
-    .box-container{
-        width: 95%;
-    }
-
-    .tit-box {
-        width: 95%;
-        font-size: 18px;
-    }
 
     .crossword{
         flex-direction: column;
-        width: 95%;
+        padding: 10px;
    
     }
 
     .grid {
-        grid-template-columns: repeat(13, 20px);
+        grid-template-columns: repeat(13, 23px);
         gap: 0;
     }
 
     .cell-container {
         position: relative;
-        width: 20px;
-        height: 20px;
+        width: 22px;
+        height: 22px;
     }
 
     .cell {
-        font-size: 12px;
+        font-size: 10px;
     }
-
-   
 
     .clues {
         grid-template-columns: 1fr;
+        width: 95%;
+    }
+
+    .number {
+        font-size: 6px;
+    }
+
+    /*GAMES*/
+    .games{
+        grid-template-columns: 1fr;
+     
+    }
+
+    /*MINUTE CRYPTIC*/
+    .smallcrossword .gridSmall{
+        grid-template-columns: repeat(6, 30px);
+    }
+
+    .smallcrossword .cell2{
+        width: 30px;
+        height: 30px;
+    }
+
+    /*CAPTION COMPETITION*/
+    .caption textarea{
         width: 90%;
     }
 
-    .news{
-        width: 95%;
-    }
-
-    .tic-tac-toe{
-        width: 95%;
+    /*tic tac toc*/
+    .celda {
+        width: 80px;
+        height: 80px;
     }
 
     #tablero {
@@ -224,14 +297,7 @@ button:hover{
 
     }
 
-    .celda {
-        width: 80px;
-        height: 80px;
-    }
-
-    .smallcrossword{
-        width: 95%;
-    }
+ 
 
 }   
 
