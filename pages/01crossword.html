@@ -41,9 +41,13 @@
 
             <div class="box-container">
 
-                <h2 class="tit-box"><span>❖</span>Crossword</h2>
+                <h2 class="tit-box"><span>❖</span>entertainment</h2>
 
-                <div class="crossword  ">
+                <div class="crossword ">
+
+                    <div class="text">
+                        <h4>Crossword</h4>
+                    </div>
 
                     <div class="grid" id="grid"></div>
 
@@ -51,102 +55,113 @@
                         <div class="clues-box">
                             <h4>ACROSS</h4>
                             <ul>
-                                <li><span>1</span> Distant sun (4)</li>
-                                <li><span>3</span> Jacques - - -, underwater explorer (8)</li>
-                                <li><span>8</span> Explosives ingredient (13)</li>
-                                <li><span>12</span> City on the River Tay (6)</li>
-                                <li><span>16</span> Furtive, sly (6)</li>
-                                <li><span>20</span> BBC religious programme (5,2,6)</li>
-                                <li><span>23</span> Optician’s sight checker (3,5)</li>
-                                <li><span>24</span> Novel, - - - of the Flies (4)</li>
+                                <li><span>1</span> Exclamation of wonder (4)</li>
+                                <li><span>5</span> Pluck (4)</li>
+                                <li><span>7</span> Conclusion (7)</li>
+                                <li><span>8</span> Christian - - -, French fashion designer (4)</li>
+                                <li><span>9</span> Horses restraint (4)</li>
+                                <li><span>10</span> Difficult, toilsome (7)</li>
+                                <li><span>12</span> Old Testament prophet (4)</li>
+                                <li><span>13</span> Engrave (4)</li>
+                                <li><span>14</span> Relating to the heart (7)</li>
+                                <li><span>17</span> Wandering person (4)</li>
+                                <li><span>18</span> Lenin’s state (4)</li>
+                                <li><span>19</span> Fictitious reason (7)</li>
+                                <li><span>20</span> Breed (4)</li>
+                                <li><span>21</span> Give forth (4)</li>
                             </ul>
                         </div>
                         <div class="clues-box">
                             <h4>DOWN</h4>
                             <ul>
-                                <li><span>1</span> Church assembly (5)</li>
-                                <li><span>2</span> Prestige car, - - - Martin (5)</li>
-                                <li><span>3</span> North Sea fuel (3)</li>
-                                <li><span>4</span> Tip of corn (3)</li>
-                                <li><span>5</span> Vase for ashes (3)</li>
-                                <li><span>6</span> Unemployment benefit (4)</li>
-                                <li><span>7</span> Affirmative reply (3)</li>
-                                <li><span>12</span> - - - out, make last (3)</li>
-                                <li><span>14</span> Sort (3)</li>
-                                <li><span>15</span> Flying saucer? (1,1,1)</li>
+                                <li><span>1</span> Mafia boss (9)</li>
+                                <li><span>2</span> Astrologer’s prediction (9)</li>
+                                <li><span>3</span> Soreness on the eyelid (4)</li>
+                                <li><span>5</span> Trouble persistently (9)</li>
+                                <li><span>6</span> Nicholas - - -, actor who played Rodney Trotter</li>
+                                <li><span>11</span> Relieve (of) (3)</li>
+                                <li><span>15</span> Spool (4)</li>
+                                <li><span>16</span> mountain goat (4)</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="news yellow entrada" onclick="toggleNews(this)">
-                    <div class="picture"><img src="../assets/img/01index/jason.jpg" alt=""></div>
-                    <div class="text">
-                        <h5 class="description">Dear Jason, I'm feeling lost and unsure of my purpose in life. What should I do?</h5>
-                        <p class="news-text">
-                            Whe you're fishing, it's not always about knowing exactly where the fish are;
-                            Sometimes you have to explore the water. Drift along, cast out here an there, and trust the current
-                            to guide you. Life is like that too. You don't always need to know yoour exact purpose. 
-                            It's ok to drift and try different things until you find sometimes that tugs at your line.
-                            Purpose, like a good catch, comes when you least except it. Just keep casting and enjoy the journey.
-                            You'll find your spot eventually.                           
-                        </p>
-                        <h5><span class="bullet">❖</span>Todd's Top Tips</h5>
-                    </div>              
-                </div>
+                <div class="games">
 
-                <h2 class="tit-box"><span>❖</span>Tic tac toe</h2>
+                    <div class="tic-tac-toe  entrada">
+                        <div class="text">
+                            <h4>Tic-Tac-Toe</h4>
+                        </div> 
+                        <div id="tablero"></div>
+                        <div id="mensaje"></div>
+                        <button onclick="reiniciar()">Restart</button>
+                    </div>
 
-                <div class="tic-tac-toe blue entrada"> 
-                    <div id="tablero"></div>
-                    <div id="mensaje"></div>
-                    <button onclick="reiniciar()">Restart</button>
-                </div>
+                    <div class="caption  entrada">
+                        <div class="picture"><img src="../assets/img/default.webp" alt="" id="monkey"></div>
+                        <div class="text">
+                            <h4>Caption Competition</h4>
+                            <form action="">
+                                <textarea name="" id="campComp"></textarea>
+                            </form>
+                        </div>              
+                    </div>
 
-                <div class="crossword green entrada">
-                    <div class="picture"><img src="../assets/img/default.webp" alt=""></div>
-                    <div class="text">
-                        <h4>Did you know?</h4>
-                        <p>
-                            There are around 996 in-patient beds in Southmead Hospital.
-                            That's almost as  many as number of the breaks some Porters
-                            take a week!
-                        </p>
-                    </div>              
-                </div>
-
-                <div class="news red entrada" onclick="toggleNews(this)">
-                    <div class="picture"><img src="../assets/img/01index/malcom.png" alt=""></div>
-                    <div class="text">
-                        <h5 class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                        <p class="news-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Laudantium dolore pariatur aliquid assumenda vel voluptas excepturi nulla dolorum placeat cupiditate quo, 
-                            ea vitae tempore, animi vero, eos quia voluptates dolorem?                         
-                        </p>
-                        <h5><span class="bullet">❖</span>Malcom's Movies</h5>
-                    </div>              
-                </div>
-
-                <div class="crossword blue entrada">
-                    <div class="picture"><img src="../assets/img/default.webp" alt="" id="monkey"></div>
-                    <div class="text">
-                        <h4>Caption Competition</h4>
-                        <form action="">
-                            <textarea name="" id="campComp"></textarea>
-                        </form>
-                    </div>              
-                </div>
-
-                <div class="smallcrossword red entrada" id="target2">
-                    
-                    <div class="text">
+                    <div class="smallcrossword  entrada" id="target2">
+                      
                         <h4>Minute Cryptic</h4>
                         <p>
-                            Object HR interviewing notorious gang leaders(5)
+                           Doctor asked about nurse’s head wound(6)
                         </p>
                         <div class="gridSmall" id="anotherCrossword"></div>
-                    </div>   
+                      
+                    </div>
+
+                    <div class="did-you-know  entrada">
+                        <div class="text">
+                            <h4>Did you know?</h4>
+                            <p>
+                                For the financial year 2024-2025 Southmead Hospital Emergency Department had 118 arrivals via helicopter. <br><br>
+                                (To be fair it is murder trying to find parking around here) <br> <br>There were a total of 106,785 A&E attendees, 
+                                which is approximately 292 people every day! No wonder we are looking to cut staffing numbers.
+                            </p>
+                        </div>              
+                    </div>
+
+                </div>
+
+                <div class="boxGrid">
+
+                    <div class="news yellow entrada" onclick="toggleNews(this)">
+                        <div class="picture"><img src="../assets/img/01index/jason.jpg" alt=""></div>
+                        <div class="text">
+                            <h4>Dear Jason, I'm feeling lost and unsure of my purpose in life. What should I do?</h4>
+                            <p class="news-text">
+                                Whe you're fishing, it's not always about knowing exactly where the fish are;
+                                Sometimes you have to explore the water. Drift along, cast out here an there, and trust the current
+                                to guide you. Life is like that too. You don't always need to know yoour exact purpose. 
+                                It's ok to drift and try different things until you find sometimes that tugs at your line.
+                                Purpose, like a good catch, comes when you least except it. Just keep casting and enjoy the journey.
+                                You'll find your spot eventually.                           
+                            </p>
+                            <h5><span class="bullet">❖</span>Todd's Top Tips</h5>
+                        </div>              
+                    </div>
+
+                    <div class="news red entrada" onclick="toggleNews(this)">
+                        <div class="picture"><img src="../assets/img/01index/malcom.png" alt=""></div>
+                        <div class="text">
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                            <p class="news-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Laudantium dolore pariatur aliquid assumenda vel voluptas excepturi nulla dolorum placeat cupiditate quo, 
+                                ea vitae tempore, animi vero, eos quia voluptates dolorem?                         
+                            </p>
+                            <h5><span class="bullet">❖</span>Malcom's Movies</h5>
+                        </div>              
+                    </div>
+
                 </div>
 
             </div>
