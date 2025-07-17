@@ -197,8 +197,36 @@ body{
     transform: translateX(0);
 }
 
+/*NEWS ROW*/
 
+.news-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: beige;
+    border: 1px solid #e6e8e3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2%;
+    border-radius: 10px;
+}
 
+.news-row  h4{
+    text-align: center;
+    color: #c46564;
+}
+
+.news-row img{
+    width: 100%;
+    height: auto;
+}
+
+.news-row .text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 /*ADVERTAISING*/
 
 #ad{
