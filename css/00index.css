@@ -113,7 +113,9 @@
 }
 
 .frontpage h2{
+    text-align: center;
     text-transform: uppercase;
+    color: #c46564;
 }
 
 .frontpage img{
@@ -164,7 +166,7 @@
     }
 
     .frontpage{
-        width: 85%;
+        width: 95%;
     }
 
     .live{
