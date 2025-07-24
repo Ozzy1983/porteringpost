@@ -197,7 +197,7 @@ body{
     transform: translateX(0);
 }
 
-/*NEWS ROW*/
+/*--- NEWS ROW ---*/
 
 .news-row{
     display: flex;
@@ -208,7 +208,7 @@ body{
     background-color: beige;
     border: 1px solid #e6e8e3;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 2%;
+    padding: 10PX;
     border-radius: 10px;
 }
 
@@ -217,16 +217,42 @@ body{
     color: #c46564;
 }
 
-.news-row img{
-    width: 100%;
-    height: auto;
+.news-row .description{
+    color: #353634;
 }
 
 .news-row .text{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    padding: 5px;
+    text-align: left;
     gap: 10px;
+    background-color: #f5f5dc;
 }
+
+#effect-fire{ /*fire effect*/
+    position: relative;
+    width: 300px; /* Ajusta según tu imagen */
+    height: auto;
+}
+
+.fondo {
+    padding: 10px;
+    width: 100%;
+    display: block;
+}
+
+.llamas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none; /* para que no interfiera con clics */
+    mix-blend-mode: screen; /* útil si el fondo del fuego es negro */
+}
+/*-- --*/
+
 /*ADVERTAISING*/
 
 #ad{
