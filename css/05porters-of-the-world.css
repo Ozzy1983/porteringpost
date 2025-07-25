@@ -145,7 +145,7 @@
 }
 
 #target5 h2{
-    color: #e2e2e2;
+    color: #c46564;
 }
 
 #target5 img{
@@ -179,6 +179,7 @@
     border: 1px solid #e6e8e3;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     border-radius: 10px;
+    color: white;
 }
 
 #target02{
@@ -187,6 +188,7 @@
     border: 1px solid #e6e8e3;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     border-radius: 10px;
+    color: whitesmoke;
 }
 
 #target03{
@@ -195,6 +197,7 @@
     border: 1px solid #e6e8e3;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     border-radius: 10px;
+    color: black;
 }
 
 .inner-clock{
@@ -214,7 +217,7 @@
 .inner-clock h3{
     font-family: 'Digital7', monospace;
     font-size: 30px;
-    color: #ff0100;
+    
 }
    
 /*KOREAN LANGUAGE*/
@@ -317,7 +320,7 @@
     }
 
     .inner-clock h3{
-        font-size: 25px;
+        font-size: 22px;
     }
 
     /* CURRENCY */
