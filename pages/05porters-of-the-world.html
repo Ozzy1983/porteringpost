@@ -42,7 +42,15 @@
 
             <div class="box-container">
 
-                <h2 class="tit-box"><span>❖</span>Porters of the world!</h2>
+                <div>
+                    <h2 class="tit-box"><span>❖</span>Porters of the world!</h2>
+                    <p class="description-POW">
+                        Here we will delve into the wonderful world of International Porters, 
+                        each edition focussing on a new country linked to our team. 
+                        For this edition we will be shining a spotlight on:
+                        Republic of Korea
+                    </p> 
+                </div>          
 
                 <div class="tierra-container">
 
@@ -62,18 +70,12 @@
                     </div>
 
                     <h1 class="flag-letters degree">대한민국 </h1>
-                </div>
+                </div>               
 
-                <div class="country-container">
-                    <p class="description-POW">
-                        Here we will delve into the wonderful world of International Porters, 
-                        each edition focussing on a new country linked to our team. 
-                        For this edition we will be shining a spotlight on:
-                        Republic of Korea
-                    </p>  
-
+                <div class="country-container ">
+                     
                     <!--Slider poner fotos-->
-                    <div class="slider">
+                    <div class="slider-corea">
                         <div class="slide-container" id="slideContainer">
                             <img src="../assets/img/06porter of world/korea1.png" alt="Image 1">
                             <img src="../assets/img/06porter of world/korea2.png" alt="Image 2">
@@ -85,7 +87,7 @@
 
                 <div class="boxGrid">
 
-                    <div class="news-row entrada contenedor" >
+                    <div class="news-row  contenedor">
                         <h4>Hanguk 한국</h4>
                         <div class="video-container">
                             <iframe 
@@ -116,29 +118,29 @@
                         </div>              
                     </div>
 
-                    <div class="news entrada contenedor" onclick="toggleNews(this);cambiarLayout(this)">
-                        <div class="picture"><img src="../assets/img/06porter of world/koreanflag.jpg" alt=""></div>
+                    <div class="news-row  contenedor" onclick="toggleNews(this);cambiarLayout(this)">
+                        <h4>The Taegeukgi</h4>
+                        <div class="picture"><img src="../assets/img/06porter of world/south-korea-flag-animation.gif" alt=""></div>
+                        <h5 class="description">Designed by Lee Eung-jun in 1882,</h5>
                         <div class="text">
-                            <h4>The Taegeukgi</h4>
-                            <h5 class="description">Designed by Lee Eung-jun in 1882,</h5>
                             <p class="news-text">
-                                the white symbolises peace, 
+                                The white symbolises peace, 
                                 with the centre circle representing harmony with both Yin and Yang energy. 
                                 The four trigrams around the outside represent Heaven Earth, The Sun and The Moon.                            
                             </p>
-                            <h5><span class="bullet">❖</span>Scott Mckean</h5>
+                            <h5><span class="bullet">❖</span>Click on!</h5>
                         </div>              
                     </div>
 
-                    <div class="news-row entrada contenedor">
+                    <div class="news-row  contenedor">
                         <h4>Siberian Tiger</h4>
-                        <div class="picture"><img src="../assets/img/06porter of world/Siberian-tiger.jpeg" alt=""></div>
+                        <div class="picture"><img src="../assets/img/06porter of world/Siberian-tiger.jpg" alt=""></div>
                         <div class="text">
                             <h5 class="description">The National animal of South Korea</h5>
                         </div>              
                     </div>
 
-                    <div class="news-row entrada contenedor korean-lan" onclick="toggleNews(this);cambiarLayout(this)">
+                    <div class="news-row  contenedor korean-lan" onclick="toggleNews(this);cambiarLayout(this)">
                         <div class="text">
                             <h4>Hangugeo</h4>
                             <p>
@@ -174,32 +176,31 @@
                         </div> 
                     </div>
 
-                    <!--Slider -->
-                    <div class="news-row entrada">
-                        <div class="slider-buttons">
-                            <div class="slides-img" id="manualSlider">
+                    <!-- second Slider -->
+                 
+                    <div class="news-row slider-buttons ">
+                        <div class="slides-img" id="manualSlider">
                                 <img src="../assets/img/06porter of world/Ban_Ki-moon.jpg" class="slide active" alt="Image 1">
                                 <img src="../assets/img/06porter of world/blackpink.jpg" class="slide" alt="Image 2">
                                 <img src="../assets/img/06porter of world/bts.jpg" class="slide" alt="Image 2">
                                 <img src="../assets/img/06porter of world/Ha-Joon Chang.jpg" class="slide" alt="Image 2">
                                 <img src="../assets/img/default.webp" class="slide" alt="Image 2">
-                            </div>
+                         </div>
 
-                            <div class="slider-controls">
+                        <div class="slider-controls">
                                 <button id="prevBtn">&#10094;</button>
                                 <button id="nextBtn">&#10095;</button>
-                            </div>
+                        </div>
 
-                            <div class="text">
+                        <div class="text">
                                 <h4>Notable People</h4>
                                 <h5 class="description">Ha-Joon Chang, Hyegyeong Palmer, Ban Ki-Moon , BTS & Blackpink</h5>
                             
-                            </div>
                         </div>
-
                     </div>
-                    
-                
+
+                    <!---->
+
                     <div class="news" id="target5">
                         <h2>GMT +8 Hours</h2>
                         <div class="box-clock">
@@ -229,7 +230,8 @@
                    
                     </div>
 
-                    <div class="news-row">
+                    
+                    <div class="news-row currency">
                         <h4>Currency</h4>
                         <div class="text">
                             <p>
@@ -239,7 +241,7 @@
 
                         </div>
                         
-                        <img src="../assets/img/06porter of world/GBP TO KRW.jpg" alt="">
+                        <img src="../assets/img/06porter of world/GBP TO KRW.jpg" class="money-wise">
 
                         <p>
                             <a href="https://wise.com/us/currency-converter/gbp-to-crc-rate/chart" target="_blank">

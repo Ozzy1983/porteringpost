@@ -19,7 +19,7 @@
         <header>
             <div class="date-issue">
                 <div class="date">
-                    <p>27 May 2025</p>
+                    <p><span id="fecha-actual"></span></p>
                 </div>
                 <div class="issue">
                     <p>Issue No. 4</p>
@@ -40,79 +40,59 @@
         <div class="main-container">
 
             <div class="box-container">
+               
+                <h2 class="tit-box"><span>❖</span>sport</h2>
 
-                <img src="../assets/img/07sport/imagingunathetic.png" class="top-picture">
+                <div class="ball-container">
+                    <img src="../assets/img/07sport/ball2.webp" class="gif-ball">
+                    <img src="../assets/img/07sport/ball2.webp" class="gif-ball">
+                    <img src="../assets/img/07sport/ball2.webp" class="gif-ball">
+                </div>
+                
+                <h3>Take a stroll for Southmead</h3>
+                <img src="../assets/img/07sport/top picture sport.jpg" class="top-picture">
 
                 <div class="boxGrid">
-                    <div class="news red entrada" onclick="toggleNews(this)">
-                        <div class="picture"><img src="../assets/img/default.webp" alt=""></div>
+                    <div class="news-row red entrada" onclick="toggleNews(this)">
+                        <h4 class="description">Bristol to Bath 25K</h4>
                         <div class="text">
-                            <h4 class="description">Eurota League</h4>
-                            <p class="news-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Laudantium dolore pariatur aliquid assumenda vel voluptas excepturi nulla dolorum placeat cupiditate quo, 
-                                ea vitae tempore, animi vero, eos quia voluptates dolorem?                         
-                            </p>
-                            <h5><span class="bullet">❖</span>Bylines</h5>
-                        </div>              
-                    </div>
-
-                    <div class="news red entrada" onclick="toggleNews(this)">
-                        <div class="picture"><img src="../assets/img/default.webp" alt=""></div>
-                        <div class="text">
-                            <h5 class="description">Lorem ipsum dolor</h5>
-                            <p class="news-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Laudantium dolore pariatur aliquid assumenda vel voluptas excepturi nulla dolorum placeat cupiditate quo, 
-                                ea vitae tempore, animi vero, eos quia voluptates dolorem?                         
-                            </p>
-                            <h5><span class="bullet">❖</span>Bylines</h5>
-                        </div>              
-                    </div>
-
-                    <div class="news red entrada" onclick="toggleNews(this)">
-                        <div class="picture"><img src="../assets/img/default.webp" alt=""></div>
-                        <div class="text">
-                            <h5 class="description">Lorem ipsum dolor</h5>
-                            <p class="news-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Laudantium dolore pariatur aliquid assumenda vel voluptas excepturi nulla dolorum placeat cupiditate quo, 
-                                ea vitae tempore, animi vero, eos quia voluptates dolorem?                         
-                            </p>
-                            <h5><span class="bullet">❖</span>Bylines</h5>
-                        </div>              
-                    </div>
-
-                    <div class="news red entrada" onclick="toggleNews(this)">
-                        <div class="picture"><img src="../assets/img/default.webp" alt=""></div>
-                        <div class="text">
-                            <h5 class="description">Bristol to Bath 25K</h5>
-                            <p class="news-text">
-                                If you’re looking for an opportunity to test your mettle and 
-                                raise some cash for the hospital charity in the process, 
-                                you could consider signing up for the Bristol to Bath 25K Trail Challenge. 
-                                From the Bristol and Bath Science Park to the Royal Victoria Park in Bath, 
-                                you can marvel in the beautiful scenery all while helping elicit donations for 
-                                the hospital charity. This will be the second event and entries are filling in fast. 
-                                The race will be held on Saturday 27th of September so don’t delay your entry submission. 
+                            
+                            <p >
+                                If you’re looking for an opportunity to test your mettle and raise some cash 
+                                for the hospital charity in the process, you could consider signing up for 
+                                the Bristol to Bath 25K Trail Challenge. From the Bristol and Bath Science 
+                                Park to the Royal Victoria Park in Bath, you can marvel in the beautiful scenery 
+                                all while helping elicit donations for the hospital charity. This will be the 
+                                second event and entries are filling in fast. The race will be held on Saturday 27th 
+                                of September so don’t delay your entry submission.
                                 <br><br>
-                                Anyone interested should contact Community Fundraising Manager Hannah Jones for more information and discounted entry.                        
+                                Anyone interested should contact Community Fundraising Manager Hannah Jones for more information and discounted entry. 
+                                
                             </p>
-                            <h5><span class="bullet"></span>hannah.jones3@nbt.nhs.uk</h5>
+                            <h5><span class="bullet">❖</span>hannah.jones3@nbt.nhs.uk</h5>
                         </div>              
                     </div>
 
-                </div>
+                    <div class="news-row red entrada" onclick="toggleNews(this)">
+                        <h5 class="description">Walkerbot Appeal</h5>
+                        <div class="picture"><img src="../assets/img/07sport/qrwalkerbot.jpg" alt=""></div>
+                        <div class="text">
+                            <p >
+                                No, this isn’t a call for funds to create a cyborg copy of Mike Walker. 
+                                The Hospital Charity is looking to buy a brand new piece of tech designed 
+                                to help patients recovering from strokes and other neurological conditions. 
+                                The LokomatPro Sensation assists patients in rebuilding their walking strength 
+                                and improve their gait. As with most technology of this kind, it has a heft price
+                                 tag, and the Charity would like to raise around £430,000 for this piece of kit. 
+                                 While that may sound a lot, the impact it would have on patients and staff would be 
+                                 invaluable. Follow the link to find out more or to donate.                        
+                            </p>
+                        </div>              
+                    </div>
 
-               
-
-                <div class="box">
                     
+
                 </div>
-
-                
-
-
                 
 
             </div>
@@ -132,6 +112,7 @@
         <script src="../js/crossword.js"></script>
         <script src="../js/porters-of-the-world.js"></script>
         <script src="../js/news.js"></script>
+        <script src="../js/index.js"></script>
         
 
     </body>
