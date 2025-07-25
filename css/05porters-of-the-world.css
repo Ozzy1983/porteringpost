@@ -167,43 +167,37 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80px;
-    width: 150px;
-}
-
-.box-time{
+    height: auto;
+    width: 100%;
     border: 1px solid #e6e8e3;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     border-radius: 10px;
+}
+
+.style-clock{
+    border: 1px solid #e6e8e3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 #target01{
-    background-color: #231a06;
-    border: 1px solid #e6e8e3;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    border-radius: 10px;
-    width: 10px;
-    height: 10px;
+    background: linear-gradient(to top, black, #6a6a6a);
     color: white;
 }
 
 #target02{
-    background-color: #7c7874;
-    border: 1px solid #e6e8e3;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    border-radius: 10px;
-    width: 10px;
-    height: 10px;
-    color: whitesmoke;
+    background: linear-gradient(to top, black, #6a6a6a);
+    color: white;
 }
 
 #target03{
-    background-color: #e5e5e5;
-    border: 1px solid #e6e8e3;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    border-radius: 10px;
-    width: 10px;
-    height: 10px;
+    background: linear-gradient(to top, #ffffff, #dbdbdb);
     color: black;
 }
 
@@ -211,6 +205,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px;
     height: 80%;
     width: 90%;
   
@@ -224,7 +219,13 @@
 .inner-clock h3{
     font-family: 'Digital7', monospace;
     font-size: 30px;
-    padding: 2px;
+   
+}
+
+.box-time .flag-time{
+    width: 10px;
+    height: 20px;
+    
 }
    
 /*KOREAN LANGUAGE*/
@@ -244,7 +245,7 @@
 /*second slide */
 
 .slider-buttons {
-    width: 300px;
+    width: 100%;
     margin: 20px auto;
     text-align: center;
     position: relative;
@@ -252,9 +253,10 @@
 
 .slides-img {
     position: relative;
-    width: 100%;
+    width: 70%;
     height: 300px;
     overflow: hidden;
+
 }
 
 .slide {
@@ -263,6 +265,7 @@
     height: 300px;
     object-fit: cover;
     border-radius: 8px;
+    
 }
 
 .slide.active {
@@ -271,6 +274,7 @@
 
 .slider-controls {
     margin-top: 10px;
+  
 }
 
 .slider-controls button {
@@ -319,6 +323,10 @@
     /*SECOND SLIDE*/
     .slider-buttons {
         margin: 0;
+    }
+
+    .slides-img {
+        width: 100%;
     }
 
     /*RELOJ*/
