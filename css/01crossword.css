@@ -246,7 +246,7 @@ button:hover{
     }
 
     .grid {
-        grid-template-columns: repeat(13, 23px);
+        grid-template-columns: repeat(13, 25px);
         gap: 0;
     }
 
