@@ -17,3 +17,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const paragraph = document.querySelector(".text-effect");
     observer.observe(paragraph);
 });
+
+
+// FECHA ACTUAL
+
+const fechaElemento = document.getElementById("fecha-actual");
+const hoy = new Date();
+
+// Opcional: formato personalizado (dd/mm/yyyy)
+const opciones = { day: '2-digit', month: '2-digit', year: 'numeric' };
+const fechaFormateada = hoy.toLocaleDateString('es-ES', opciones);
+
+fechaElemento.textContent = fechaFormateada;
