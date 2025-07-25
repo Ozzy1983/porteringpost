@@ -175,6 +175,10 @@ button:hover{
     width: 100%;
 }
 
+.caption .picture img{
+    width: 100%;
+}
+
 .caption .text{
     display: flex;
     flex-direction: column;
