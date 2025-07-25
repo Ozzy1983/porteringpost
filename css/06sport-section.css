@@ -4,51 +4,22 @@
 }
 
 
+/*GIF*/
 
+.ball-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
-/*--- box section effect 
-
-.box{
-    position: relative;
-    display: flex;
-    width: 300px;
-    height: 400px;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    overflow: hidden;
-    border-radius: 10px;
 }
 
-.box::before{
-    content: '';
-    position: absolute;
-    width: 180px;
-    height: 140%;
-    background-color: #a53425;
-    box-shadow: 0 0 10px rgb(8, 8, 8);
-    animation: animate 4s linear infinite;
+.gif-ball{
+    width: 100%;
+    height: auto;
 }
-
-.box::after{
-    content: '';
-    position: absolute;
-    inset: 5px;
-    background-color: beige;
-    border-radius: 5px;
-}
-@keyframes animate{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-
----*/
 
 @media screen and (max-width: 1024px){
+
+    
 
     
         
