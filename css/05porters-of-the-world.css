@@ -167,11 +167,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
+  
     height: 80px;
-    background-color: #ccee8d;
+    
     width: 150px;
 } 
+
+#target01{
+    border: 1px solid black;
+}
 
 .inner-clock{
     border: 1px solid black;

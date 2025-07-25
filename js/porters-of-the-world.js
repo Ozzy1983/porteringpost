@@ -11,11 +11,11 @@ function updateClock(id, offsetHours) {
     let seconds = localTime.getSeconds().toString().padStart(2, '0');
 
     clock.innerHTML = `
-        <h3>${hours}</h3>
+        <h3 id="target01">${hours}</h3>
         <h3>:</h3>
-        <h3>${minutes}</h3>
+        <h3 id="target02">${minutes}</h3>
         <h3>:</h3>
-        <h3>${seconds}</h3>
+        <h3 id="target03">${seconds}</h3>
     `;
 }
 
