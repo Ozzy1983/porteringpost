@@ -11,11 +11,11 @@ function updateClock(id, offsetHours) {
     let seconds = localTime.getSeconds().toString().padStart(2, '0');
 
     clock.innerHTML = `
-        <h3 id="target01">${hours}</h3>
+        <h3 id="target01" class="style-clock">${hours}</h3>
         <h3>:</h3>
-        <h3 id="target02">${minutes}</h3>
+        <h3 id="target02" class="style-clock">${minutes}</h3>
         <h3>:</h3>
-        <h3 id="target03">${seconds}</h3>
+        <h3 id="target03" class="style-clock">${seconds}</h3>
     `;
 }
 
@@ -40,6 +40,7 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % totalSlides;
   slideContainer.style.transform = `translateX(-${300 * currentIndex}px)`;
 }, 5000); // cambia cada 5 segundos
+
 
 // SECOND SLIDER
 
