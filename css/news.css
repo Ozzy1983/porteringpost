@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-
 body{
     padding-bottom: 80px;
 }
@@ -67,64 +66,6 @@ body{
     cursor: pointer; 
 }
 
-
-/*-- SLIDER --*/
-
-.slider-container {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    position: relative;
-    padding: 10px;
-    background-color: beige;
-    border: 1px solid #e6e8e3;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-/*title of article*/
-.slider-container .text h4{
-    color: #c46564;
-}
-
-.slider {
-    position: relative;
-    overflow: hidden;
-}
-
-.slide {
-    width: 100%;
-    display: none;
-    border-radius: 10px;
-}
-
-.slide.active {
-    display: block;
-}
-
-.slider-buttons {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.slider-buttons .btn {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.slider-buttons .btn.active {
-    background-color: #555;
-}
-
-/*------*/
-
-
 .box .show{
     transform: translate(0);
 }
@@ -181,21 +122,6 @@ body{
     opacity: 1;
 }
 
-.entrada.izquierda {
-    transform: translateX(-100px);
-}
-
-.entrada.derecha {
-    transform: translateX(100px);
-}
-
-.entrada.visible.izquierda {
-    transform: translateX(0);
-}
-
-.entrada.visible.derecha {
-    transform: translateX(0);
-}
 
 /*--- NEWS ROW ---*/
 
@@ -210,6 +136,10 @@ body{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 10PX;
     border-radius: 10px;
+}
+
+.news-row .picture img{
+    width: 100%;
 }
 
 .news-row  h4{
@@ -228,22 +158,21 @@ body{
     padding: 5px;
     text-align: left;
     gap: 10px;
-    background-color: #f5f5dc;
 }
 
-#effect-fire{ /*fire effect*/
+#effect-fire{ /*fire container*/
     position: relative;
     width: 300px; /* Ajusta según tu imagen */
     height: auto;
 }
 
-.fondo {
+.fondo { /*Ian picture*/
     padding: 10px;
     width: 100%;
     display: block;
 }
 
-.llamas {
+.llamas { /*fire gift*/
     position: absolute;
     bottom: 0;
     left: 0;
@@ -251,7 +180,59 @@ body{
     pointer-events: none; /* para que no interfiera con clics */
     mix-blend-mode: screen; /* útil si el fondo del fuego es negro */
 }
+
+.news-row .news-text img{
+    width: 100%;
+    padding: 10px;
+}
 /*-- --*/
+
+/*Color of total rad*/
+
+.radcolor{
+    background-color: bisque;
+}
+
+
+/*--- SLIDER ---*/
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 8px;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slider-buttons {
+    text-align: center;
+}
+
+.slider-buttons .btn {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-buttons .btn.active {
+    background-color: #333;
+}
 
 /*ADVERTAISING*/
 
@@ -300,6 +281,10 @@ body{
     .news:hover{
         display: flex;
         flex-direction: column;
+    }
+
+    .slider {
+        max-width: 200px;
     }
 
 }
