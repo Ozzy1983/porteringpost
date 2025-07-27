@@ -38,7 +38,7 @@
 
 .porterscope{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
 
@@ -49,6 +49,7 @@
     align-items: center;
     background-color: white;
     border: 1px solid #e6e8e3;
+    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 2%;
     cursor: pointer;
@@ -66,10 +67,18 @@
     display: none;
 }
 
-.zodiac:hover{
-    transform: scale(1.5);
+.porterscope:hover .zodiac{
+    opacity: 0.1;
+}
+
+.porterscope .zodiac:hover{
+    opacity: 1;
     background-color: beige;
 }
+
+/*.zodiac:hover{
+    transform: scale(1.5);
+}*/
 
 /*Josh Gardner filosofo*/
 .joshGardner{
@@ -169,26 +178,35 @@
         font-size: 18px;
     }
 
+    .porterscope{
+        width: 95%;
+    }
+
     .zodiac h3{
         font-size: 12px;
     }
 
     .zodiac p{
-        font-size: 9px;
+        font-size: 12px;
+    }
+
+    .zodiac-img{
+        width: 100%;
+        height: auto;
     }
 
     .joshGardner img{
         width: 100%;
     }
 
-    .zodiac-img{
-        width: 40%;
-        height: 60%;
-    }
-    
     .how-to-say{
         width: 100%;
+     
+
     }
+
+    
+    
 
 }
 
