@@ -74,11 +74,8 @@
 .porterscope .zodiac:hover{
     opacity: 1;
     background-color: beige;
+    transform: scale(1.2);
 }
-
-/*.zodiac:hover{
-    transform: scale(1.5);
-}*/
 
 /*Josh Gardner filosofo*/
 .joshGardner{
@@ -203,6 +200,10 @@
         width: 100%;
      
 
+    }
+
+    .contenedor{
+        margin-top: 20px;
     }
 
     
