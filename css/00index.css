@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 20px;
     align-items: center;
     margin-bottom: 70px;
     background-color: #a8bf9b;
@@ -31,11 +32,17 @@
 
 .live{
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
     padding: 20px;
     width: 70%;
     background-color: aliceblue;
-    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.live-box{
+    display: flex;
+    gap: 5px;
 }
 
 #noticias{
@@ -55,7 +62,6 @@
     
 }
 
-
 .live-color{
     display: flex;
     justify-content: center;
@@ -65,6 +71,17 @@
     gap: 2px;
     color: red;
     animation: blink 1.5s ease-in-out infinite;
+}
+
+.bbc-box{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.bbc-box img{
+    width: 10%;
+    height: auto;
 }
 
 @keyframes blink {
@@ -113,9 +130,7 @@
 }
 
 .frontpage h2{
-    text-align: center;
     text-transform: uppercase;
-    color: #c46564;
 }
 
 .frontpage img{
@@ -166,7 +181,7 @@
     }
 
     .frontpage{
-        width: 95%;
+        width: 85%;
     }
 
     .live{
