@@ -41,11 +41,13 @@
             <div class="box-container">
 
                 <div class="live"> 
-                    
-                    <h5 class="live-color"><i class="fa-solid fa-circle"></i>LIVE</h5>
+                    <div class="live-box">
+                        <h5 class="live-color"><i class="fa-solid fa-circle"></i>LIVE</h5>
 
-                    <div id="noticias"></div>
+                        <div id="noticias"></div>
+                    </div>
                     
+                    <div class="bbc-box"><img src="assets/img/01index/bbc.png" alt=""></div>
                 </div>
 
                 <div class="frontpage">
@@ -133,6 +135,8 @@
                     document.getElementById("noticias").innerHTML = "Loading";
                     console.error("Error al cargar noticias:", error);
             });
+
+            
 
         </script>
 
